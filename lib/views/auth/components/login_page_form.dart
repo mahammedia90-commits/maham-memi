@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
@@ -34,6 +35,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Theme(
       data: AppTheme.defaultTheme.copyWith(
         inputDecorationTheme: AppTheme.secondaryInputDecorationTheme,
@@ -46,17 +48,17 @@ class _LoginPageFormState extends State<LoginPageForm> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Phone Field
-              const Text("Phone Number"),
+              Text(l10n.phoneNumber),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.number,
-                validator: Validators.requiredWithFieldName('Phone').call,
+                validator: Validators.requiredWithFieldName(l10n.phoneNumber).call,
                 textInputAction: TextInputAction.next,
               ),
               const SizedBox(height: AppDefaults.padding),
 
               // Password Field
-              const Text("Password"),
+              Text(l10n.password),
               const SizedBox(height: 8),
               TextFormField(
                 validator: Validators.password.call,
@@ -79,12 +81,12 @@ class _LoginPageFormState extends State<LoginPageForm> {
 
               // Forget Password labelLarge
               Align(
-                alignment: Alignment.centerRight,
+                alignment: AlignmentDirectional.centerEnd,
                 child: TextButton(
                   onPressed: () {
                     Navigator.pushNamed(context, AppRoutes.forgotPassword);
                   },
-                  child: const Text('Forget Password?'),
+                  child: Text(l10n.forgetPassword),
                 ),
               ),
 

@@ -17,7 +17,7 @@ class OnboardingPage extends StatefulWidget {
 class _OnboardingPageState extends State<OnboardingPage> {
   int currentPage = 0;
   late PageController controller;
-  List<OnboardingModel> items = OnboardingData.items;
+  List<OnboardingModel> items = [];
 
   onPageChange(int value) {
     currentPage = value;
@@ -43,6 +43,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
   void initState() {
     super.initState();
     controller = PageController();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    items = OnboardingData.getItems(context);
   }
 
   @override

@@ -1,5 +1,5 @@
-name: grocery
-description: "A new Flutter project."
+name: zajalkom
+description: "زاجلكم - تطبيق توصيل البقالة"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
@@ -30,6 +30,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Internationalization
+  intl: ^0.20.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -70,6 +75,9 @@ flutter_icons:
 
 # The following section is specific to Flutter packages.
 flutter:
+  # Enable code generation for localization
+  generate: true
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

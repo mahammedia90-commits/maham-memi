@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_defaults.dart';
@@ -17,12 +18,13 @@ class CartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: isHomePage
           ? null
           : AppBar(
               leading: const AppBackButton(),
-              title: const Text('Cart Page'),
+              title: Text(l10n.cartPage),
             ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -39,10 +41,9 @@ class CartPage extends StatelessWidget {
                   padding: const EdgeInsets.all(AppDefaults.padding),
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigator.pushNamed(context, AppRoutes.orderSuccessfull);
                       Navigator.pushNamed(context, AppRoutes.checkoutPage);
                     },
-                    child: const Text('Checkout'),
+                    child: Text(l10n.checkout),
                   ),
                 ),
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 import '../../../core/components/network_image.dart';
 import '../../../core/constants/constants.dart';
@@ -11,6 +12,7 @@ class ProfileHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Stack(
       children: [
         /// Background
@@ -20,7 +22,7 @@ class ProfileHeader extends StatelessWidget {
         Column(
           children: [
             AppBar(
-              title: const Text('Profile'),
+              title: Text(l10n.profile),
               elevation: 0,
               backgroundColor: Colors.transparent,
               titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
@@ -11,6 +12,7 @@ class ProfileMenuOptions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.all(AppDefaults.padding),
       padding: const EdgeInsets.all(AppDefaults.padding),
@@ -22,31 +24,31 @@ class ProfileMenuOptions extends StatelessWidget {
       child: Column(
         children: [
           ProfileListTile(
-            title: 'My Profile',
+            title: l10n.myProfile,
             icon: AppIcons.profilePerson,
             onTap: () => Navigator.pushNamed(context, AppRoutes.profileEdit),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
-            title: 'Notification',
+            title: l10n.notification,
             icon: AppIcons.profileNotification,
             onTap: () => Navigator.pushNamed(context, AppRoutes.notifications),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
-            title: 'Setting',
+            title: l10n.setting,
             icon: AppIcons.profileSetting,
             onTap: () => Navigator.pushNamed(context, AppRoutes.settings),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
-            title: 'Payment',
+            title: l10n.payment,
             icon: AppIcons.profilePayment,
             onTap: () => Navigator.pushNamed(context, AppRoutes.paymentMethod),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
-            title: 'Logout',
+            title: l10n.logout,
             icon: AppIcons.profileLogout,
             onTap: () => Navigator.pushNamed(context, AppRoutes.loginOrSignup),
           ),

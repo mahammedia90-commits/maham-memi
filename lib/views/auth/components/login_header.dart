@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 import '../../../core/components/network_image.dart';
 import '../../../core/constants/constants.dart';
@@ -10,6 +11,7 @@ class LoginPageHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         SizedBox(
@@ -20,14 +22,14 @@ class LoginPageHeader extends StatelessWidget {
           ),
         ),
         Text(
-          'Welcome to our',
+          l10n.welcomeTo,
           style: Theme.of(context)
               .textTheme
               .titleLarge
               ?.copyWith(fontWeight: FontWeight.bold),
         ),
         Text(
-          'E-Grocery',
+          l10n.appTitle,
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,

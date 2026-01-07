@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 import '../../../core/components/dotted_divider.dart';
 import '../../../core/constants/constants.dart';
@@ -11,29 +12,30 @@ class ItemTotalsAndPrice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(AppDefaults.padding),
+    final l10n = AppLocalizations.of(context)!;
+    return Padding(
+      padding: const EdgeInsets.all(AppDefaults.padding),
       child: Column(
         children: [
           ItemRow(
-            title: 'Total Item',
+            title: l10n.totalItem,
             value: '6',
           ),
           ItemRow(
-            title: 'Weight',
+            title: l10n.weight,
             value: '33 Kg',
           ),
           ItemRow(
-            title: 'Price',
+            title: l10n.price,
             value: '\$ 82.25',
           ),
           ItemRow(
-            title: 'Price',
+            title: l10n.discount,
             value: '\$ 12.25',
           ),
-          DottedDivider(),
+          const DottedDivider(),
           ItemRow(
-            title: 'Total Price',
+            title: l10n.totalPrice,
             value: '\$ 70.25',
           ),
         ],

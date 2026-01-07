@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 import '../../../core/constants/constants.dart';
 import '../../../core/utils/validators.dart';
@@ -14,6 +15,7 @@ class SignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       margin: const EdgeInsets.all(AppDefaults.margin),
       padding: const EdgeInsets.all(AppDefaults.padding),
@@ -25,14 +27,14 @@ class SignUpForm extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Name"),
+          Text(l10n.fullName),
           const SizedBox(height: 8),
           TextFormField(
-            validator: Validators.requiredWithFieldName('Name').call,
+            validator: Validators.requiredWithFieldName(l10n.fullName).call,
             textInputAction: TextInputAction.next,
           ),
           const SizedBox(height: AppDefaults.padding),
-          const Text("Phone Number"),
+          Text(l10n.phoneNumber),
           const SizedBox(height: 8),
           TextFormField(
             textInputAction: TextInputAction.next,
@@ -41,7 +43,7 @@ class SignUpForm extends StatelessWidget {
             inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           ),
           const SizedBox(height: AppDefaults.padding),
-          const Text("Password"),
+          Text(l10n.password),
           const SizedBox(height: 8),
           TextFormField(
             validator: Validators.required.call,

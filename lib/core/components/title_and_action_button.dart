@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 import '../constants/constants.dart';
 
@@ -18,6 +19,7 @@ class TitleAndActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding),
       child: Row(
@@ -37,7 +39,7 @@ class TitleAndActionButton extends StatelessWidget {
           ),
           TextButton(
             onPressed: onTap,
-            child: Text(actionLabel ?? 'View All'),
+            child: Text(actionLabel ?? l10n.seeAll),
           ),
         ],
       ),

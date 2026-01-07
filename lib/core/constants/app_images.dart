@@ -1,5 +1,8 @@
 class AppImages {
+  // Zajalkom Logo
   static const roundedLogo = 'https://i.imgur.com/9EsY2t6.png';
+  static const zajalkomLogo = 'assets/images/app_logo.svg';
+  static const zajalkomLogoSplash = 'assets/images/app_logo_splash.png';
 
   /* <---- Homepage banner -----> */
   static const homePageBanner = 'https://i.imgur.com/8hBIsS5.png';
