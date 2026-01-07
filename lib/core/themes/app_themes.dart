@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants/app_colors.dart';
 import '../constants/app_defaults.dart';
 
 class AppTheme {
+  /// Theme for English (uses Gilroy font)
   static ThemeData get defaultTheme {
     return ThemeData(
       colorSchemeSeed: AppColors.primary,
@@ -84,6 +86,94 @@ class AppTheme {
         ),
       ),
     );
+  }
+
+  /// Theme for Arabic (uses Cairo font)
+  static ThemeData get arabicTheme {
+    final cairoTextTheme = GoogleFonts.cairoTextTheme();
+
+    return ThemeData(
+      colorSchemeSeed: AppColors.primary,
+      textTheme: cairoTextTheme.copyWith(
+        bodyLarge: cairoTextTheme.bodyLarge?.copyWith(color: AppColors.placeholder),
+        bodyMedium: cairoTextTheme.bodyMedium?.copyWith(color: AppColors.placeholder),
+      ),
+      scaffoldBackgroundColor: Colors.white,
+      brightness: Brightness.light,
+      appBarTheme: AppBarTheme(
+        elevation: 0.3,
+        backgroundColor: Colors.white,
+        iconTheme: const IconThemeData(color: Colors.black),
+        titleTextStyle: GoogleFonts.cairo(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+          fontSize: 18,
+        ),
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarBrightness: Brightness.light,
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+          padding: const EdgeInsets.all(AppDefaults.padding),
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: AppDefaults.borderRadius,
+          ),
+          textStyle: GoogleFonts.cairo(fontWeight: FontWeight.w700),
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          padding: const EdgeInsets.all(AppDefaults.padding),
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: AppDefaults.borderRadius,
+          ),
+          textStyle: GoogleFonts.cairo(fontWeight: FontWeight.w700),
+        ),
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          textStyle: GoogleFonts.cairo(fontWeight: FontWeight.bold),
+        ),
+      ),
+      inputDecorationTheme: defaultInputDecorationTheme,
+      sliderTheme: const SliderThemeData(
+        showValueIndicator: ShowValueIndicator.alwaysVisible,
+        thumbColor: Colors.white,
+      ),
+      tabBarTheme: TabBarThemeData(
+        labelColor: AppColors.primary,
+        unselectedLabelColor: AppColors.placeholder,
+        labelPadding: const EdgeInsets.all(AppDefaults.padding),
+        indicatorSize: TabBarIndicatorSize.label,
+        labelStyle: GoogleFonts.cairo(
+          fontWeight: FontWeight.bold,
+          color: AppColors.primary,
+        ),
+        unselectedLabelStyle: GoogleFonts.cairo(
+          fontWeight: FontWeight.bold,
+          color: AppColors.placeholder,
+        ),
+        indicator: const UnderlineTabIndicator(
+          borderSide: BorderSide(
+            color: AppColors.primary,
+            width: 2,
+          ),
+        ),
+      ),
+    );
+  }
+
+  /// Get theme based on locale
+  static ThemeData getThemeForLocale(Locale locale) {
+    if (locale.languageCode == 'ar') {
+      return arabicTheme;
+    }
+    return defaultTheme;
   }
 
   /* <---- Input Decorations Theme -----> */

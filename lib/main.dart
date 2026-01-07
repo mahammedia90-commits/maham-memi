@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'zajalkom',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.defaultTheme,
+      theme: AppTheme.getThemeForLocale(_locale),
       locale: _locale,
       supportedLocales: const [
         Locale('en'),
