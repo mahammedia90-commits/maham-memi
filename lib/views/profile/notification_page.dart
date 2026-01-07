@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import '../../core/components/app_back_button.dart';
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'Notification',
-        ),
+        title: Text(l10n.notification),
       ),
       body: ListView(
         padding: const EdgeInsets.only(top: AppDefaults.padding),

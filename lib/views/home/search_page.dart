@@ -7,6 +7,7 @@ import '../../core/constants/app_defaults.dart';
 import '../../core/constants/app_icons.dart';
 import '../../core/routes/app_routes.dart';
 import '../../core/utils/ui_util.dart';
+import '../../l10n/generated/app_localizations.dart';
 import 'dialogs/product_filters_dialog.dart';
 
 class SearchPage extends StatelessWidget {
@@ -33,6 +34,7 @@ class _RecentSearchList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Expanded(
       child: Column(
         children: [
@@ -42,7 +44,7 @@ class _RecentSearchList extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Recent Search',
+                l10n.recentSearch,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       color: Colors.black,
                     ),
@@ -72,6 +74,7 @@ class _SearchPageHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.all(AppDefaults.padding),
       child: Row(
@@ -85,7 +88,7 @@ class _SearchPageHeader extends StatelessWidget {
                 Form(
                   child: TextFormField(
                     decoration: InputDecoration(
-                      hintText: 'Search',
+                      hintText: l10n.search,
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(AppDefaults.padding),
                         child: SvgPicture.asset(

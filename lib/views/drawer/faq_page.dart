@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/components/app_back_button.dart';
+import '../../l10n/generated/app_localizations.dart';
 import 'components/faq_item.dart';
 
 class FAQPage extends StatelessWidget {
@@ -8,10 +9,11 @@ class FAQPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('FAQ'),
+        title: Text(l10n.faq),
       ),
       body: const Column(
         children: [

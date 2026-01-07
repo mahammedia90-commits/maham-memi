@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_defaults.dart';
 
 import '../../../core/components/app_back_button.dart';
+import '../../../l10n/generated/app_localizations.dart';
 import 'components/new_card_row.dart';
 import 'components/default_card.dart';
 import 'components/payment_option_tile.dart';
@@ -12,10 +13,11 @@ class PaymentMethodPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Payment Option'),
+        title: Text(l10n.paymentOption),
       ),
       body: Column(
         children: [
@@ -27,7 +29,7 @@ class PaymentMethodPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(AppDefaults.padding),
               child: Text(
-                'Other Payment Option',
+                l10n.otherPaymentOption,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -37,19 +39,19 @@ class PaymentMethodPage extends StatelessWidget {
           ),
           PaymentOptionTile(
             icon: 'https://i.imgur.com/7pI5714.png',
-            label: 'Paypal',
+            label: l10n.paypal,
             accountName: 'mypaypal@gmail.com',
             onTap: () {},
           ),
           PaymentOptionTile(
             icon: 'https://i.imgur.com/aRJj3iU.png',
-            label: 'Cash on Delivery',
-            accountName: 'Pay in Cash',
+            label: l10n.cashOnDelivery,
+            accountName: l10n.payInCash,
             onTap: () {},
           ),
           PaymentOptionTile(
             icon: 'https://i.imgur.com/lLUcMC1.png',
-            label: 'Apple Pay',
+            label: l10n.applePay,
             accountName: 'applepay.com',
             onTap: () {},
           ),

@@ -69,10 +69,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get fullName => 'Full Name';
 
   @override
+  String get firstName => 'First Name';
+
+  @override
+  String get lastName => 'Last Name';
+
+  @override
   String get email => 'Email';
 
   @override
   String get confirmPassword => 'Confirm Password';
+
+  @override
+  String get gender => 'Gender';
+
+  @override
+  String get birthday => 'Birthday';
 
   @override
   String get popularPacks => 'Popular Packs';
@@ -90,10 +102,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get searchProducts => 'Search products...';
 
   @override
-  String get cartPage => 'Cart Page';
+  String get recentSearch => 'Recent Search';
+
+  @override
+  String get searchResults => 'Search Results';
+
+  @override
+  String get productsFound => 'Products Found';
+
+  @override
+  String get cartPage => 'Cart';
 
   @override
   String get checkout => 'Checkout';
+
+  @override
+  String get payNow => 'Pay Now';
 
   @override
   String get totalItem => 'Total Item';
@@ -112,6 +136,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get couponCode => 'Coupon Code';
+
+  @override
+  String get selectDeliveryAddress => 'Select Delivery Address';
+
+  @override
+  String get addNew => 'Add New';
+
+  @override
+  String get homeAddress => 'Home Address';
+
+  @override
+  String get officeAddress => 'Office Address';
 
   @override
   String get profile => 'Profile';
@@ -135,6 +171,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get myOrders => 'My Orders';
 
   @override
+  String get myOrder => 'My Order';
+
+  @override
   String get coupon => 'Coupon';
 
   @override
@@ -153,19 +192,79 @@ class AppLocalizationsEn extends AppLocalizations {
   String get saved => 'Saved';
 
   @override
+  String get chooseCategory => 'Choose a category';
+
+  @override
+  String get vegetables => 'Vegetables';
+
+  @override
+  String get meatAndFish => 'Meat And Fish';
+
+  @override
+  String get medicine => 'Medicine';
+
+  @override
+  String get babyCare => 'Baby Care';
+
+  @override
+  String get officeSupplies => 'Office Supplies';
+
+  @override
+  String get beauty => 'Beauty';
+
+  @override
+  String get gymEquipment => 'Gym Equipment';
+
+  @override
+  String get gardeningTools => 'Gardening Tools';
+
+  @override
+  String get petCare => 'Pet Care';
+
+  @override
+  String get eyeWears => 'Eye Wears';
+
+  @override
+  String get pack => 'Pack';
+
+  @override
+  String get others => 'Others';
+
+  @override
+  String get inviteFriend => 'Invite Friend';
+
+  @override
   String get aboutUs => 'About Us';
+
+  @override
+  String get faqs => 'FAQs';
 
   @override
   String get faq => 'FAQ';
 
   @override
-  String get help => 'Help';
+  String get termsConditions => 'Terms & Conditions';
 
   @override
   String get termsAndConditions => 'Terms and Conditions';
 
   @override
+  String get helpCenter => 'Help Center';
+
+  @override
+  String get rateApp => 'Rate This App';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
   String get contactUs => 'Contact Us';
+
+  @override
+  String get help => 'Help';
+
+  @override
+  String get hiHowCanWeHelp => 'Hi! How can we help?';
 
   @override
   String get orderSuccessful => 'Order Successful';
@@ -178,6 +277,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get backToHome => 'Back to Home';
+
+  @override
+  String get continueText => 'Continue';
+
+  @override
+  String get trackOrder => 'Track Order';
+
+  @override
+  String get noOrdersYet => 'No Orders Yet';
+
+  @override
+  String get noOrdersMessage => 'Sorry you haven\'t placed any order yet.';
 
   @override
   String get addToCart => 'Add to Cart';
@@ -201,6 +312,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get submitReview => 'Submit Review';
 
   @override
+  String get review => 'Review';
+
+  @override
+  String get rateQuality => 'How would you rate the quality of this Products';
+
+  @override
+  String get leaveComment => 'Leave your valuable comments';
+
+  @override
+  String get submit => 'Submit';
+
+  @override
   String get language => 'Language';
 
   @override
@@ -219,13 +342,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get addNewCard => 'Add New Card';
 
   @override
+  String get changeNotificationSettings => 'Change Notification Settings';
+
+  @override
+  String get appNotification => 'App Notification';
+
+  @override
+  String get phoneNotification => 'Phone Number Notification';
+
+  @override
+  String get offerNotification => 'Offer Notification';
+
+  @override
   String get emptyCart => 'Your cart is empty';
 
   @override
   String get startShopping => 'Start Shopping';
-
-  @override
-  String get noOrdersYet => 'No orders yet';
 
   @override
   String get noSavedItems => 'No saved items';
@@ -250,9 +382,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get confirmNewPassword => 'Confirm New Password';
-
-  @override
-  String get submit => 'Submit';
 
   @override
   String get category => 'Category';
@@ -285,13 +414,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paymentMethod => 'Payment Method';
 
   @override
+  String get paymentOption => 'Payment Option';
+
+  @override
+  String get otherPaymentOption => 'Other Payment Option';
+
+  @override
   String get cashOnDelivery => 'Cash on Delivery';
+
+  @override
+  String get payInCash => 'Pay in Cash';
 
   @override
   String get creditCard => 'Credit Card';
 
   @override
   String get paypal => 'PayPal';
+
+  @override
+  String get applePay => 'Apple Pay';
 
   @override
   String get discount => 'Discount';
@@ -354,10 +495,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get next => 'Next';
 
   @override
+  String get all => 'All';
+
+  @override
   String get allOrders => 'All Orders';
 
   @override
+  String get running => 'Running';
+
+  @override
   String get runningOrders => 'Running';
+
+  @override
+  String get previous => 'Previous';
 
   @override
   String get completedOrders => 'Completed';
@@ -367,4 +517,40 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bundleDetails => 'Bundle Details';
+
+  @override
+  String get giftsOffer => 'Gifts Offer';
+
+  @override
+  String get couponOffer => 'Coupon Offer';
+
+  @override
+  String get congratulations => 'Congratulations';
+
+  @override
+  String get yourOrderCancelled => 'Your Order Cancelled';
+
+  @override
+  String get greatWinterDiscounts => 'Great Winter Discounts';
+
+  @override
+  String get now => 'Now';
+
+  @override
+  String get minutesAgo => 'Minutes Ago';
+
+  @override
+  String get faqQuestion1 => 'How long will delivery take?';
+
+  @override
+  String get faqQuestion2 => 'What is the refund system?';
+
+  @override
+  String get hotDealMessage => 'Hot Deal Buy one get free on Offer';
+
+  @override
+  String get youGetYourOrder => 'You get your order';
+
+  @override
+  String get discountVegetables => '20% off vegetables';
 }

@@ -5,19 +5,19 @@ import '../../../core/components/app_back_button.dart';
 import '../../../core/components/app_radio.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class AddressPage extends StatelessWidget {
   const AddressPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.cardColor,
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'Delivery Address',
-        ),
+        title: Text(l10n.deliveryAddress),
       ),
       body: Container(
         margin: const EdgeInsets.all(AppDefaults.margin),

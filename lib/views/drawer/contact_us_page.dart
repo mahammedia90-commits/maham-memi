@@ -4,16 +4,18 @@ import 'package:flutter_svg/svg.dart';
 import '../../core/components/app_back_button.dart';
 import '../../core/components/network_image.dart';
 import '../../core/constants/constants.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class ContactUsPage extends StatelessWidget {
   const ContactUsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Contact Us'),
+        title: Text(l10n.contactUs),
       ),
       backgroundColor: AppColors.cardColor,
       body: Container(
@@ -32,7 +34,7 @@ class ContactUsPage extends StatelessWidget {
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Contact Us',
+                l10n.contactUs,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,

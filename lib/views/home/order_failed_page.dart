@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class OrderFailedPage extends StatelessWidget {
   const OrderFailedPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       body: Column(
         children: [
@@ -30,7 +32,7 @@ class OrderFailedPage extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Sorry, Order has Failed',
+                  l10n.orderFailed,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
@@ -56,7 +58,7 @@ class OrderFailedPage extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: const Text('Try Again'),
+                child: Text(l10n.tryAgain),
               ),
             ),
           ),

@@ -2,597 +2,209 @@
   "@@locale": "en",
 
   "appName": "zajalkom",
-  "@appName": {
-    "description": "Application name"
-  },
-
   "welcomeTo": "Welcome to our",
-  "@welcomeTo": {
-    "description": "Welcome message prefix"
-  },
-
   "appTitle": "zajalkom",
-  "@appTitle": {
-    "description": "App title shown in header"
-  },
 
   "onboardingTitle1": "Browse all the category",
-  "@onboardingTitle1": {
-    "description": "First onboarding screen title"
-  },
-
   "onboardingDesc1": "Explore our wide range of grocery categories to find exactly what you need.",
-  "@onboardingDesc1": {
-    "description": "First onboarding screen description"
-  },
-
   "onboardingTitle2": "Amazing Discounts & Offers",
-  "@onboardingTitle2": {
-    "description": "Second onboarding screen title"
-  },
-
   "onboardingDesc2": "Enjoy exclusive discounts and special offers on your favorite products.",
-  "@onboardingDesc2": {
-    "description": "Second onboarding screen description"
-  },
-
   "onboardingTitle3": "Delivery in 30 Min",
-  "@onboardingTitle3": {
-    "description": "Third onboarding screen title"
-  },
-
   "onboardingDesc3": "Fast and reliable delivery right to your doorstep in just 30 minutes.",
-  "@onboardingDesc3": {
-    "description": "Third onboarding screen description"
-  },
 
   "phoneNumber": "Phone Number",
-  "@phoneNumber": {
-    "description": "Phone number field label"
-  },
-
   "password": "Password",
-  "@password": {
-    "description": "Password field label"
-  },
-
   "forgetPassword": "Forget Password?",
-  "@forgetPassword": {
-    "description": "Forget password button text"
-  },
-
   "login": "Login",
-  "@login": {
-    "description": "Login button text"
-  },
-
   "signUp": "Sign Up",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-
   "dontHaveAccount": "Don't Have Account?",
-  "@dontHaveAccount": {
-    "description": "Don't have account text"
-  },
-
   "alreadyHaveAccount": "Already Have Account?",
-  "@alreadyHaveAccount": {
-    "description": "Already have account text"
-  },
-
   "orLoginWith": "Or Login With",
-  "@orLoginWith": {
-    "description": "Social login separator text"
-  },
-
   "createAccount": "Create Account",
-  "@createAccount": {
-    "description": "Create account button text"
-  },
-
   "fullName": "Full Name",
-  "@fullName": {
-    "description": "Full name field label"
-  },
-
+  "firstName": "First Name",
+  "lastName": "Last Name",
   "email": "Email",
-  "@email": {
-    "description": "Email field label"
-  },
-
   "confirmPassword": "Confirm Password",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
+  "gender": "Gender",
+  "birthday": "Birthday",
 
   "popularPacks": "Popular Packs",
-  "@popularPacks": {
-    "description": "Popular packs section title"
-  },
-
   "ourNewItem": "Our New Item",
-  "@ourNewItem": {
-    "description": "New items section title"
-  },
-
   "seeAll": "See All",
-  "@seeAll": {
-    "description": "See all button text"
-  },
-
   "search": "Search",
-  "@search": {
-    "description": "Search placeholder"
-  },
-
   "searchProducts": "Search products...",
-  "@searchProducts": {
-    "description": "Search products placeholder"
-  },
+  "recentSearch": "Recent Search",
+  "searchResults": "Search Results",
+  "productsFound": "Products Found",
 
-  "cartPage": "Cart Page",
-  "@cartPage": {
-    "description": "Cart page title"
-  },
-
+  "cartPage": "Cart",
   "checkout": "Checkout",
-  "@checkout": {
-    "description": "Checkout button text"
-  },
-
+  "payNow": "Pay Now",
   "totalItem": "Total Item",
-  "@totalItem": {
-    "description": "Total item label"
-  },
-
   "weight": "Weight",
-  "@weight": {
-    "description": "Weight label"
-  },
-
   "price": "Price",
-  "@price": {
-    "description": "Price label"
-  },
-
   "totalPrice": "Total Price",
-  "@totalPrice": {
-    "description": "Total price label"
-  },
-
   "applyCoupon": "Apply Coupon",
-  "@applyCoupon": {
-    "description": "Apply coupon button text"
-  },
-
   "couponCode": "Coupon Code",
-  "@couponCode": {
-    "description": "Coupon code field label"
-  },
+  "selectDeliveryAddress": "Select Delivery Address",
+  "addNew": "Add New",
+  "homeAddress": "Home Address",
+  "officeAddress": "Office Address",
 
   "profile": "Profile",
-  "@profile": {
-    "description": "Profile page title"
-  },
-
   "myProfile": "My Profile",
-  "@myProfile": {
-    "description": "My profile menu item"
-  },
-
   "notification": "Notification",
-  "@notification": {
-    "description": "Notification menu item"
-  },
-
   "setting": "Setting",
-  "@setting": {
-    "description": "Setting menu item"
-  },
-
   "payment": "Payment",
-  "@payment": {
-    "description": "Payment menu item"
-  },
-
   "logout": "Logout",
-  "@logout": {
-    "description": "Logout menu item"
-  },
-
   "myOrders": "My Orders",
-  "@myOrders": {
-    "description": "My orders title"
-  },
-
+  "myOrder": "My Order",
   "coupon": "Coupon",
-  "@coupon": {
-    "description": "Coupon title"
-  },
-
   "deliveryAddress": "Delivery Address",
-  "@deliveryAddress": {
-    "description": "Delivery address title"
-  },
 
   "home": "Home",
-  "@home": {
-    "description": "Home navigation item"
-  },
-
   "menu": "Menu",
-  "@menu": {
-    "description": "Menu navigation item"
-  },
-
   "cart": "Cart",
-  "@cart": {
-    "description": "Cart navigation item"
-  },
-
   "saved": "Saved",
-  "@saved": {
-    "description": "Saved navigation item"
-  },
 
+  "chooseCategory": "Choose a category",
+  "vegetables": "Vegetables",
+  "meatAndFish": "Meat And Fish",
+  "medicine": "Medicine",
+  "babyCare": "Baby Care",
+  "officeSupplies": "Office Supplies",
+  "beauty": "Beauty",
+  "gymEquipment": "Gym Equipment",
+  "gardeningTools": "Gardening Tools",
+  "petCare": "Pet Care",
+  "eyeWears": "Eye Wears",
+  "pack": "Pack",
+  "others": "Others",
+
+  "inviteFriend": "Invite Friend",
   "aboutUs": "About Us",
-  "@aboutUs": {
-    "description": "About us page title"
-  },
-
+  "faqs": "FAQs",
   "faq": "FAQ",
-  "@faq": {
-    "description": "FAQ page title"
-  },
-
-  "help": "Help",
-  "@help": {
-    "description": "Help page title"
-  },
-
+  "termsConditions": "Terms & Conditions",
   "termsAndConditions": "Terms and Conditions",
-  "@termsAndConditions": {
-    "description": "Terms and conditions page title"
-  },
-
+  "helpCenter": "Help Center",
+  "rateApp": "Rate This App",
+  "privacyPolicy": "Privacy Policy",
   "contactUs": "Contact Us",
-  "@contactUs": {
-    "description": "Contact us page title"
-  },
+  "help": "Help",
+  "hiHowCanWeHelp": "Hi! How can we help?",
 
   "orderSuccessful": "Order Successful",
-  "@orderSuccessful": {
-    "description": "Order successful message"
-  },
-
   "orderFailed": "Order Failed",
-  "@orderFailed": {
-    "description": "Order failed message"
-  },
-
   "tryAgain": "Try Again",
-  "@tryAgain": {
-    "description": "Try again button text"
-  },
-
   "backToHome": "Back to Home",
-  "@backToHome": {
-    "description": "Back to home button text"
-  },
+  "continueText": "Continue",
+  "trackOrder": "Track Order",
+  "noOrdersYet": "No Orders Yet",
+  "noOrdersMessage": "Sorry you haven't placed any order yet.",
 
   "addToCart": "Add to Cart",
-  "@addToCart": {
-    "description": "Add to cart button text"
-  },
-
   "buyNow": "Buy Now",
-  "@buyNow": {
-    "description": "Buy now button text"
-  },
-
   "quantity": "Quantity",
-  "@quantity": {
-    "description": "Quantity label"
-  },
-
   "description": "Description",
-  "@description": {
-    "description": "Description label"
-  },
-
   "reviews": "Reviews",
-  "@reviews": {
-    "description": "Reviews label"
-  },
-
   "writeReview": "Write Review",
-  "@writeReview": {
-    "description": "Write review button text"
-  },
-
   "submitReview": "Submit Review",
-  "@submitReview": {
-    "description": "Submit review button text"
-  },
+  "review": "Review",
+  "rateQuality": "How would you rate the quality of this Products",
+  "leaveComment": "Leave your valuable comments",
+  "submit": "Submit",
 
   "language": "Language",
-  "@language": {
-    "description": "Language setting"
-  },
-
   "notifications": "Notifications",
-  "@notifications": {
-    "description": "Notifications setting"
-  },
-
   "changePassword": "Change Password",
-  "@changePassword": {
-    "description": "Change password option"
-  },
-
   "changePhoneNumber": "Change Phone Number",
-  "@changePhoneNumber": {
-    "description": "Change phone number option"
-  },
-
   "addNewAddress": "Add New Address",
-  "@addNewAddress": {
-    "description": "Add new address button"
-  },
-
   "addNewCard": "Add New Card",
-  "@addNewCard": {
-    "description": "Add new card button"
-  },
+  "changeNotificationSettings": "Change Notification Settings",
+  "appNotification": "App Notification",
+  "phoneNotification": "Phone Number Notification",
+  "offerNotification": "Offer Notification",
 
   "emptyCart": "Your cart is empty",
-  "@emptyCart": {
-    "description": "Empty cart message"
-  },
-
   "startShopping": "Start Shopping",
-  "@startShopping": {
-    "description": "Start shopping button"
-  },
-
-  "noOrdersYet": "No orders yet",
-  "@noOrdersYet": {
-    "description": "No orders message"
-  },
-
   "noSavedItems": "No saved items",
-  "@noSavedItems": {
-    "description": "No saved items message"
-  },
 
   "verifyPhone": "Verify Phone",
-  "@verifyPhone": {
-    "description": "Verify phone title"
-  },
-
   "enterCode": "Enter the code sent to your phone",
-  "@enterCode": {
-    "description": "Enter verification code message"
-  },
-
   "resendCode": "Resend Code",
-  "@resendCode": {
-    "description": "Resend code button"
-  },
-
   "verify": "Verify",
-  "@verify": {
-    "description": "Verify button"
-  },
-
   "resetPassword": "Reset Password",
-  "@resetPassword": {
-    "description": "Reset password title"
-  },
-
   "newPassword": "New Password",
-  "@newPassword": {
-    "description": "New password field label"
-  },
-
   "confirmNewPassword": "Confirm New Password",
-  "@confirmNewPassword": {
-    "description": "Confirm new password field label"
-  },
-
-  "submit": "Submit",
-  "@submit": {
-    "description": "Submit button"
-  },
 
   "category": "Category",
-  "@category": {
-    "description": "Category title"
-  },
-
   "categories": "Categories",
-  "@categories": {
-    "description": "Categories title"
-  },
-
   "allCategories": "All Categories",
-  "@allCategories": {
-    "description": "All categories title"
-  },
-
   "orderDetails": "Order Details",
-  "@orderDetails": {
-    "description": "Order details title"
-  },
-
   "orderStatus": "Order Status",
-  "@orderStatus": {
-    "description": "Order status label"
-  },
-
   "orderConfirmed": "Order Confirmed",
-  "@orderConfirmed": {
-    "description": "Order confirmed status"
-  },
-
   "processing": "Processing",
-  "@processing": {
-    "description": "Processing status"
-  },
-
   "shipped": "Shipped",
-  "@shipped": {
-    "description": "Shipped status"
-  },
-
   "delivered": "Delivered",
-  "@delivered": {
-    "description": "Delivered status"
-  },
 
   "paymentMethod": "Payment Method",
-  "@paymentMethod": {
-    "description": "Payment method title"
-  },
-
+  "paymentOption": "Payment Option",
+  "otherPaymentOption": "Other Payment Option",
   "cashOnDelivery": "Cash on Delivery",
-  "@cashOnDelivery": {
-    "description": "Cash on delivery option"
-  },
-
+  "payInCash": "Pay in Cash",
   "creditCard": "Credit Card",
-  "@creditCard": {
-    "description": "Credit card option"
-  },
-
   "paypal": "PayPal",
-  "@paypal": {
-    "description": "PayPal option"
-  },
+  "applePay": "Apple Pay",
 
   "discount": "Discount",
-  "@discount": {
-    "description": "Discount label"
-  },
-
   "deliveryFee": "Delivery Fee",
-  "@deliveryFee": {
-    "description": "Delivery fee label"
-  },
-
   "subtotal": "Subtotal",
-  "@subtotal": {
-    "description": "Subtotal label"
-  },
 
   "edit": "Edit",
-  "@edit": {
-    "description": "Edit button"
-  },
-
   "delete": "Delete",
-  "@delete": {
-    "description": "Delete button"
-  },
-
   "save": "Save",
-  "@save": {
-    "description": "Save button"
-  },
-
   "cancel": "Cancel",
-  "@cancel": {
-    "description": "Cancel button"
-  },
-
   "confirm": "Confirm",
-  "@confirm": {
-    "description": "Confirm button"
-  },
-
   "yes": "Yes",
-  "@yes": {
-    "description": "Yes button"
-  },
-
   "no": "No",
-  "@no": {
-    "description": "No button"
-  },
 
   "arabic": "Arabic",
-  "@arabic": {
-    "description": "Arabic language name"
-  },
-
   "english": "English",
-  "@english": {
-    "description": "English language name"
-  },
-
   "editProfile": "Edit Profile",
-  "@editProfile": {
-    "description": "Edit profile title"
-  },
 
   "phoneRequired": "Phone number is required",
-  "@phoneRequired": {
-    "description": "Phone required validation message"
-  },
-
   "passwordRequired": "Password is required",
-  "@passwordRequired": {
-    "description": "Password required validation message"
-  },
-
   "invalidEmail": "Invalid email address",
-  "@invalidEmail": {
-    "description": "Invalid email validation message"
-  },
-
   "passwordTooShort": "Password must be at least 8 characters",
-  "@passwordTooShort": {
-    "description": "Password too short validation message"
-  },
 
   "getStarted": "Get Started",
-  "@getStarted": {
-    "description": "Get started button"
-  },
-
   "skip": "Skip",
-  "@skip": {
-    "description": "Skip button"
-  },
-
   "next": "Next",
-  "@next": {
-    "description": "Next button"
-  },
 
+  "all": "All",
   "allOrders": "All Orders",
-  "@allOrders": {
-    "description": "All orders tab"
-  },
-
+  "running": "Running",
   "runningOrders": "Running",
-  "@runningOrders": {
-    "description": "Running orders tab"
-  },
-
+  "previous": "Previous",
   "completedOrders": "Completed",
-  "@completedOrders": {
-    "description": "Completed orders tab"
-  },
 
   "createMyPack": "Create My Pack",
-  "@createMyPack": {
-    "description": "Create my pack button"
-  },
-
   "bundleDetails": "Bundle Details",
-  "@bundleDetails": {
-    "description": "Bundle details title"
-  }
+
+  "giftsOffer": "Gifts Offer",
+  "couponOffer": "Coupon Offer",
+  "congratulations": "Congratulations",
+  "yourOrderCancelled": "Your Order Cancelled",
+  "greatWinterDiscounts": "Great Winter Discounts",
+  "now": "Now",
+  "minutesAgo": "Minutes Ago",
+
+  "faqQuestion1": "How long will delivery take?",
+  "faqQuestion2": "What is the refund system?",
+
+  "hotDealMessage": "Hot Deal Buy one get free on Offer",
+  "youGetYourOrder": "You get your order",
+  "discountVegetables": "20% off vegetables"
 }

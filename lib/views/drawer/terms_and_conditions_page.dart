@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/components/app_back_button.dart';
+import '../../l10n/generated/app_localizations.dart';
 import 'components/faq_item.dart';
 
 class TermsAndConditionsPage extends StatelessWidget {
@@ -8,10 +9,11 @@ class TermsAndConditionsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Terms And Condition'),
+        title: Text(l10n.termsAndConditions),
       ),
       body: const Column(
         children: [

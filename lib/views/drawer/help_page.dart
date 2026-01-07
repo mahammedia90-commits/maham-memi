@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
 import '../../core/themes/app_themes.dart';
+import '../../l10n/generated/app_localizations.dart';
 import 'components/help_topics.dart';
 import 'components/top_questions.dart';
 
@@ -12,10 +13,11 @@ class HelpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Help'),
+        title: Text(l10n.help),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -24,13 +26,13 @@ class HelpPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Hi! How can we help?',
+                l10n.hiHowCanWeHelp,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                     ),
               ),
-              const _SearchBar(),
+              _SearchBar(searchLabel: l10n.search),
               const TopQuestions(),
               const HelpTopics(),
             ],
@@ -42,7 +44,9 @@ class HelpPage extends StatelessWidget {
 }
 
 class _SearchBar extends StatelessWidget {
-  const _SearchBar();
+  const _SearchBar({required this.searchLabel});
+
+  final String searchLabel;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class _SearchBar extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: AppDefaults.padding),
         child: TextField(
           decoration: InputDecoration(
-            labelText: 'Search',
+            labelText: searchLabel,
             suffixIcon: IconButton(
               icon: SvgPicture.asset(
                 AppIcons.search,

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/components/app_back_button.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
+import '../../../l10n/generated/app_localizations.dart';
 import 'components/coupon_card.dart';
 
 class CouponAndOffersPage extends StatelessWidget {
@@ -10,12 +11,11 @@ class CouponAndOffersPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'Offer And Promos',
-        ),
+        title: Text(l10n.coupon),
       ),
       body: Column(
         children: [

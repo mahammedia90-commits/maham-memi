@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class ProfileEditPage extends StatelessWidget {
   const ProfileEditPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.cardColor,
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'Profile',
-        ),
+        title: Text(l10n.editProfile),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -32,7 +32,7 @@ class ProfileEditPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /* <----  First Name -----> */
-              const Text("First Name"),
+              Text(l10n.firstName),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -41,7 +41,7 @@ class ProfileEditPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Last Name -----> */
-              const Text("Last Name"),
+              Text(l10n.lastName),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -50,7 +50,7 @@ class ProfileEditPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Phone Number -----> */
-              const Text("Phone Number"),
+              Text(l10n.phoneNumber),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.number,
@@ -59,7 +59,7 @@ class ProfileEditPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Gender -----> */
-              const Text("Gender"),
+              Text(l10n.gender),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -68,7 +68,7 @@ class ProfileEditPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Birthday -----> */
-              const Text("Birthday"),
+              Text(l10n.birthday),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -79,7 +79,7 @@ class ProfileEditPage extends StatelessWidget {
               /* <---- Password -----> */
 
               /* <---- Birthday -----> */
-              const Text("Password"),
+              Text(l10n.password),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
@@ -93,7 +93,7 @@ class ProfileEditPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  child: const Text('Save'),
+                  child: Text(l10n.save),
                   onPressed: () {},
                 ),
               ),

@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../core/components/network_image.dart';
 import '../../core/constants/constants.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class OrderEmpty extends StatelessWidget {
   const OrderEmpty({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Column(
       children: [
         const Spacer(flex: 2),
@@ -29,7 +31,7 @@ class OrderEmpty extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                'No Orders Yet',
+                l10n.noOrdersYet,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -37,10 +39,10 @@ class OrderEmpty extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: AppDefaults.padding),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding),
                 child: Text(
-                  'Sorry you n\'t haven\'t placed\nany order yet.',
+                  l10n.noOrdersMessage,
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -58,7 +60,7 @@ class OrderEmpty extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: const Text('Continue'),
+                    child: Text(l10n.continueText),
                   ),
                 ),
               ),
@@ -70,7 +72,7 @@ class OrderEmpty extends StatelessWidget {
                   width: double.infinity,
                   child: TextButton(
                     onPressed: () {},
-                    child: const Text('Track Order'),
+                    child: Text(l10n.trackOrder),
                   ),
                 ),
               ),

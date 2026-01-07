@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/constants/constants.dart';
 import '../../core/routes/app_routes.dart';
+import '../../l10n/generated/app_localizations.dart';
 import 'components/category_tile.dart';
 
 class MenuPage extends StatelessWidget {
@@ -9,12 +10,13 @@ class MenuPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return SafeArea(
       child: Column(
         children: [
           const SizedBox(height: 32),
           Text(
-            'Choose a category',
+            l10n.chooseCategory,
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -35,13 +37,14 @@ class CateogoriesGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Expanded(
       child: GridView.count(
         crossAxisCount: 3,
         children: [
           CategoryTile(
             imageLink: 'https://i.imgur.com/tGChxbZ.png',
-            label: 'Vegetables',
+            label: l10n.vegetables,
             backgroundColor: AppColors.primary,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
@@ -49,77 +52,77 @@ class CateogoriesGrid extends StatelessWidget {
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/yOFxoIP.png',
-            label: 'Meat And Fish',
+            label: l10n.meatAndFish,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/GPsRaFC.png',
-            label: 'Medicine',
+            label: l10n.medicine,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/mGRqfnc.png',
-            label: 'Baby Care',
+            label: l10n.babyCare,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/fwyz4oC.png',
-            label: 'Office Supplies',
+            label: l10n.officeSupplies,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/DNr8a6R.png',
-            label: 'Beauty',
+            label: l10n.beauty,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/O2ZX5nR.png',
-            label: 'Gym Equipment',
+            label: l10n.gymEquipment,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/wJBopjL.png',
-            label: 'Gardening Tools',
+            label: l10n.gardeningTools,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/P4yJA9t.png',
-            label: 'Pet Care',
+            label: l10n.petCare,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/sxGf76e.png',
-            label: 'Eye Wears',
+            label: l10n.eyeWears,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/BPvKeXl.png',
-            label: 'Pack',
+            label: l10n.pack,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },
           ),
           CategoryTile(
             imageLink: 'https://i.imgur.com/m65fusg.png',
-            label: 'Others',
+            label: l10n.others,
             onTap: () {
               Navigator.pushNamed(context, AppRoutes.categoryDetails);
             },

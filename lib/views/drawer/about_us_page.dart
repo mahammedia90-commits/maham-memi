@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_defaults.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('About Us'),
+        title: Text(l10n.aboutUs),
       ),
       body: Padding(
         padding: const EdgeInsets.all(AppDefaults.padding),
@@ -19,7 +21,7 @@ class AboutUsPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'About Us',
+              l10n.aboutUs,
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),

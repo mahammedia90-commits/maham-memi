@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
 import '../../core/utils/ui_util.dart';
+import '../../l10n/generated/app_localizations.dart';
 import '../cart/dialogs/delivered_successfull.dart';
 
 class OrderSuccessfullPage extends StatelessWidget {
@@ -10,6 +11,7 @@ class OrderSuccessfullPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       body: Column(
         children: [
@@ -32,7 +34,7 @@ class OrderSuccessfullPage extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Order Placed Successfully',
+                  l10n.orderSuccessful,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
@@ -67,7 +69,7 @@ class OrderSuccessfullPage extends StatelessWidget {
                           widget: const DeliverySuccessfullDialog(),
                         );
                       },
-                      child: const Text('Continue'),
+                      child: Text(l10n.continueText),
                     ),
                   ),
                 ),
@@ -79,7 +81,7 @@ class OrderSuccessfullPage extends StatelessWidget {
                     width: double.infinity,
                     child: TextButton(
                       onPressed: () {},
-                      child: const Text('Track Order'),
+                      child: Text(l10n.trackOrder),
                     ),
                   ),
                 ),

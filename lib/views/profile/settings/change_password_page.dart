@@ -3,18 +3,18 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../core/components/app_back_button.dart';
 import '../../../core/constants/constants.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class ChangePasswordPage extends StatelessWidget {
   const ChangePasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'Change Password Page',
-        ),
+        title: Text(l10n.changePassword),
       ),
       backgroundColor: AppColors.cardColor,
       body: Center(
@@ -34,7 +34,7 @@ class ChangePasswordPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /* <----  Current Password -----> */
-                const Text("Current Password"),
+                Text(l10n.password),
                 const SizedBox(height: 8),
                 TextFormField(
                   keyboardType: TextInputType.visiblePassword,
@@ -50,7 +50,7 @@ class ChangePasswordPage extends StatelessWidget {
                 const SizedBox(height: AppDefaults.padding),
 
                 /* <---- New Password -----> */
-                const Text("New Password"),
+                Text(l10n.newPassword),
                 const SizedBox(height: 8),
                 TextFormField(
                   keyboardType: TextInputType.visiblePassword,
@@ -66,7 +66,7 @@ class ChangePasswordPage extends StatelessWidget {
                 const SizedBox(height: AppDefaults.padding),
 
                 /* <---- Confirm Password-----> */
-                const Text("Confirm Password"),
+                Text(l10n.confirmNewPassword),
                 const SizedBox(height: 8),
                 TextFormField(
                   keyboardType: TextInputType.visiblePassword,
@@ -86,7 +86,7 @@ class ChangePasswordPage extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    child: const Text('Update Password'),
+                    child: Text(l10n.changePassword),
                     onPressed: () {},
                   ),
                 ),

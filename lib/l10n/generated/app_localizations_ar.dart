@@ -69,10 +69,22 @@ class AppLocalizationsAr extends AppLocalizations {
   String get fullName => 'الاسم الكامل';
 
   @override
+  String get firstName => 'الاسم الأول';
+
+  @override
+  String get lastName => 'اسم العائلة';
+
+  @override
   String get email => 'البريد الإلكتروني';
 
   @override
   String get confirmPassword => 'تأكيد كلمة المرور';
+
+  @override
+  String get gender => 'الجنس';
+
+  @override
+  String get birthday => 'تاريخ الميلاد';
 
   @override
   String get popularPacks => 'الباقات الشائعة';
@@ -90,10 +102,22 @@ class AppLocalizationsAr extends AppLocalizations {
   String get searchProducts => 'ابحث عن المنتجات...';
 
   @override
-  String get cartPage => 'سلة التسوق';
+  String get recentSearch => 'عمليات البحث الأخيرة';
+
+  @override
+  String get searchResults => 'نتائج البحث';
+
+  @override
+  String get productsFound => 'منتج تم العثور عليه';
+
+  @override
+  String get cartPage => 'السلة';
 
   @override
   String get checkout => 'إتمام الشراء';
+
+  @override
+  String get payNow => 'ادفع الآن';
 
   @override
   String get totalItem => 'إجمالي العناصر';
@@ -112,6 +136,18 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get couponCode => 'رمز الكوبون';
+
+  @override
+  String get selectDeliveryAddress => 'اختر عنوان التوصيل';
+
+  @override
+  String get addNew => 'إضافة جديد';
+
+  @override
+  String get homeAddress => 'عنوان المنزل';
+
+  @override
+  String get officeAddress => 'عنوان العمل';
 
   @override
   String get profile => 'الملف الشخصي';
@@ -135,6 +171,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get myOrders => 'طلباتي';
 
   @override
+  String get myOrder => 'طلبي';
+
+  @override
   String get coupon => 'الكوبونات';
 
   @override
@@ -153,19 +192,79 @@ class AppLocalizationsAr extends AppLocalizations {
   String get saved => 'المحفوظات';
 
   @override
+  String get chooseCategory => 'اختر فئة';
+
+  @override
+  String get vegetables => 'الخضروات';
+
+  @override
+  String get meatAndFish => 'اللحوم والأسماك';
+
+  @override
+  String get medicine => 'الأدوية';
+
+  @override
+  String get babyCare => 'العناية بالطفل';
+
+  @override
+  String get officeSupplies => 'مستلزمات المكتب';
+
+  @override
+  String get beauty => 'الجمال';
+
+  @override
+  String get gymEquipment => 'معدات الرياضة';
+
+  @override
+  String get gardeningTools => 'أدوات الحديقة';
+
+  @override
+  String get petCare => 'العناية بالحيوانات';
+
+  @override
+  String get eyeWears => 'النظارات';
+
+  @override
+  String get pack => 'الباقات';
+
+  @override
+  String get others => 'أخرى';
+
+  @override
+  String get inviteFriend => 'دعوة صديق';
+
+  @override
   String get aboutUs => 'من نحن';
+
+  @override
+  String get faqs => 'الأسئلة الشائعة';
 
   @override
   String get faq => 'الأسئلة الشائعة';
 
   @override
-  String get help => 'المساعدة';
+  String get termsConditions => 'الشروط والأحكام';
 
   @override
   String get termsAndConditions => 'الشروط والأحكام';
 
   @override
+  String get helpCenter => 'مركز المساعدة';
+
+  @override
+  String get rateApp => 'قيّم التطبيق';
+
+  @override
+  String get privacyPolicy => 'سياسة الخصوصية';
+
+  @override
   String get contactUs => 'اتصل بنا';
+
+  @override
+  String get help => 'المساعدة';
+
+  @override
+  String get hiHowCanWeHelp => 'مرحباً! كيف يمكننا مساعدتك؟';
 
   @override
   String get orderSuccessful => 'تم الطلب بنجاح';
@@ -178,6 +277,18 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get backToHome => 'العودة للرئيسية';
+
+  @override
+  String get continueText => 'متابعة';
+
+  @override
+  String get trackOrder => 'تتبع الطلب';
+
+  @override
+  String get noOrdersYet => 'لا توجد طلبات بعد';
+
+  @override
+  String get noOrdersMessage => 'عذراً، لم تقم بأي طلب بعد.';
 
   @override
   String get addToCart => 'أضف للسلة';
@@ -201,6 +312,18 @@ class AppLocalizationsAr extends AppLocalizations {
   String get submitReview => 'إرسال التقييم';
 
   @override
+  String get review => 'التقييم';
+
+  @override
+  String get rateQuality => 'كيف تقيّم جودة هذا المنتج';
+
+  @override
+  String get leaveComment => 'اترك تعليقك القيّم';
+
+  @override
+  String get submit => 'إرسال';
+
+  @override
   String get language => 'اللغة';
 
   @override
@@ -219,13 +342,22 @@ class AppLocalizationsAr extends AppLocalizations {
   String get addNewCard => 'إضافة بطاقة جديدة';
 
   @override
+  String get changeNotificationSettings => 'تغيير إعدادات الإشعارات';
+
+  @override
+  String get appNotification => 'إشعارات التطبيق';
+
+  @override
+  String get phoneNotification => 'إشعارات رقم الهاتف';
+
+  @override
+  String get offerNotification => 'إشعارات العروض';
+
+  @override
   String get emptyCart => 'سلة التسوق فارغة';
 
   @override
   String get startShopping => 'ابدأ التسوق';
-
-  @override
-  String get noOrdersYet => 'لا توجد طلبات بعد';
 
   @override
   String get noSavedItems => 'لا توجد عناصر محفوظة';
@@ -250,9 +382,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get confirmNewPassword => 'تأكيد كلمة المرور الجديدة';
-
-  @override
-  String get submit => 'إرسال';
 
   @override
   String get category => 'الفئة';
@@ -285,13 +414,25 @@ class AppLocalizationsAr extends AppLocalizations {
   String get paymentMethod => 'طريقة الدفع';
 
   @override
+  String get paymentOption => 'خيارات الدفع';
+
+  @override
+  String get otherPaymentOption => 'خيارات دفع أخرى';
+
+  @override
   String get cashOnDelivery => 'الدفع عند الاستلام';
+
+  @override
+  String get payInCash => 'الدفع نقداً';
 
   @override
   String get creditCard => 'بطاقة الائتمان';
 
   @override
   String get paypal => 'باي بال';
+
+  @override
+  String get applePay => 'أبل باي';
 
   @override
   String get discount => 'الخصم';
@@ -354,10 +495,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get next => 'التالي';
 
   @override
+  String get all => 'الكل';
+
+  @override
   String get allOrders => 'جميع الطلبات';
 
   @override
+  String get running => 'الجارية';
+
+  @override
   String get runningOrders => 'الجارية';
+
+  @override
+  String get previous => 'السابقة';
 
   @override
   String get completedOrders => 'المكتملة';
@@ -367,4 +517,40 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get bundleDetails => 'تفاصيل الباقة';
+
+  @override
+  String get giftsOffer => 'عروض الهدايا';
+
+  @override
+  String get couponOffer => 'عرض الكوبون';
+
+  @override
+  String get congratulations => 'تهانينا';
+
+  @override
+  String get yourOrderCancelled => 'تم إلغاء طلبك';
+
+  @override
+  String get greatWinterDiscounts => 'خصومات الشتاء الرائعة';
+
+  @override
+  String get now => 'الآن';
+
+  @override
+  String get minutesAgo => 'دقائق مضت';
+
+  @override
+  String get faqQuestion1 => 'كم يستغرق التوصيل؟';
+
+  @override
+  String get faqQuestion2 => 'ما هو نظام الاسترداد؟';
+
+  @override
+  String get hotDealMessage => 'عرض ساخن اشتري واحد واحصل على واحد مجاناً';
+
+  @override
+  String get youGetYourOrder => 'لقد استلمت طلبك';
+
+  @override
+  String get discountVegetables => 'خصم 20% على الخضروات';
 }
