@@ -15,8 +15,9 @@ class TermsAndConditionsPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: Text(l10n.termsAndConditions),
       ),
-      body: const Column(
-        children: [
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
           TitleAndParagraph(
               isTitleHeadline: false,
               title: 'General site usage last revised\nDecember 12-01-2020.',
@@ -37,7 +38,8 @@ class TermsAndConditionsPage extends StatelessWidget {
               title: '3. Relationship With Groceries',
               paragraph:
                   '''Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis voluptate cupidatat quis irure irure consequat irure.Officia irure irure anim nisi exercitation velit cupidatat qui Lorem id ad. Amet quis occaecat quis '''),
-        ],
+          ],
+        ),
       ),
     );
   }

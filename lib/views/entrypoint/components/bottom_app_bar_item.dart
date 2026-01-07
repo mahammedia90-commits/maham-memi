@@ -22,7 +22,7 @@ class BottomAppBarItem extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Column(
-        // mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.min,
         children: [
           SvgPicture.asset(
             iconLocation,

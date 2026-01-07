@@ -95,7 +95,7 @@ class _LanguageTile extends StatelessWidget {
       ),
       subtitle: Text(subtitle),
       trailing: isSelected
-          ? Icon(
+          ? const Icon(
               Icons.check_circle,
               color: AppColors.primary,
             )

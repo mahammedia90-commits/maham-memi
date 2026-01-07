@@ -10,15 +10,28 @@ class LoginOrSignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        children: [
-          Spacer(flex: 2),
-          _AppLogoAndHeadline(),
-          Spacer(),
-          _Footer(),
-          Spacer(),
-        ],
+    return Scaffold(
+      body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            return SingleChildScrollView(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                child: const IntrinsicHeight(
+                  child: Column(
+                    children: [
+                      Spacer(flex: 2),
+                      _AppLogoAndHeadline(),
+                      Spacer(),
+                      _Footer(),
+                      Spacer(),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
       ),
     );
   }

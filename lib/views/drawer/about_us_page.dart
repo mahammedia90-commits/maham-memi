@@ -15,7 +15,7 @@ class AboutUsPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: Text(l10n.aboutUs),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(AppDefaults.padding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

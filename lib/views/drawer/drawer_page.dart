@@ -19,7 +19,7 @@ class DrawerPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: Text(l10n.menu),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(AppDefaults.padding),
         child: Column(
           children: [

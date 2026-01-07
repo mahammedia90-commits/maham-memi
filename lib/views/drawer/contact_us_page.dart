@@ -18,18 +18,19 @@ class ContactUsPage extends StatelessWidget {
         title: Text(l10n.contactUs),
       ),
       backgroundColor: AppColors.cardColor,
-      body: Container(
-        margin: const EdgeInsets.all(AppDefaults.padding),
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppDefaults.padding,
-          vertical: AppDefaults.padding * 2,
-        ),
-        decoration: BoxDecoration(
-          color: AppColors.scaffoldBackground,
-          borderRadius: AppDefaults.borderRadius,
-        ),
-        child: Column(
-          children: [
+      body: SingleChildScrollView(
+        child: Container(
+          margin: const EdgeInsets.all(AppDefaults.padding),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppDefaults.padding,
+            vertical: AppDefaults.padding * 2,
+          ),
+          decoration: BoxDecoration(
+            color: AppColors.scaffoldBackground,
+            borderRadius: AppDefaults.borderRadius,
+          ),
+          child: Column(
+            children: [
             const SizedBox(height: AppDefaults.padding),
             Align(
               alignment: Alignment.centerLeft,
@@ -107,7 +108,8 @@ class ContactUsPage extends StatelessWidget {
                 ),
               ),
             ),
-          ],
+            ],
+          ),
         ),
       ),
     );
