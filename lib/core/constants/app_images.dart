@@ -1,6 +1,6 @@
 class AppImages {
   // Zajalkom Logo
-  static const roundedLogo = 'https://i.imgur.com/9EsY2t6.png';
+  static const roundedLogo = 'assets/images/XX.png';
   static const zajalkomLogo = 'assets/images/app_logo.svg';
   static const zajalkomLogoSplash = 'assets/images/app_logo_splash.png';
 

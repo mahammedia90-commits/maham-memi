@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../core/components/network_image.dart';
 import '../../core/constants/constants.dart';
 import '../../core/routes/app_routes.dart';
 
@@ -102,9 +101,9 @@ class _AppLogoAndHeadline extends StatelessWidget {
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.3,
-          child: const AspectRatio(
+          child: AspectRatio(
             aspectRatio: 1 / 1,
-            child: NetworkImageWithLoader(AppImages.roundedLogo),
+            child: Image.asset(AppImages.roundedLogo),
           ),
         ),
         Text(
@@ -115,7 +114,7 @@ class _AppLogoAndHeadline extends StatelessWidget {
               ?.copyWith(fontWeight: FontWeight.bold),
         ),
         Text(
-          'E-Grocery',
+          'Zajalkom',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
