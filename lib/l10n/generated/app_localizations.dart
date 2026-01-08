@@ -1183,6 +1183,168 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'20% off vegetables'**
   String get discountVegetables;
+
+  /// No description provided for @city.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get city;
+
+  /// No description provided for @state.
+  ///
+  /// In en, this message translates to:
+  /// **'State'**
+  String get state;
+
+  /// No description provided for @zipCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Zip Code'**
+  String get zipCode;
+
+  /// No description provided for @newPhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'New Phone Number'**
+  String get newPhoneNumber;
+
+  /// No description provided for @retypePhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Retype Phone Number'**
+  String get retypePhoneNumber;
+
+  /// No description provided for @cardName.
+  ///
+  /// In en, this message translates to:
+  /// **'Card Name'**
+  String get cardName;
+
+  /// No description provided for @cardNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Card Number'**
+  String get cardNumber;
+
+  /// No description provided for @expireDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Expire Date'**
+  String get expireDate;
+
+  /// No description provided for @expirationDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Expiration Date'**
+  String get expirationDate;
+
+  /// No description provided for @cvv.
+  ///
+  /// In en, this message translates to:
+  /// **'CVV'**
+  String get cvv;
+
+  /// No description provided for @address.
+  ///
+  /// In en, this message translates to:
+  /// **'Address'**
+  String get address;
+
+  /// No description provided for @streetAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Street Address'**
+  String get streetAddress;
+
+  /// No description provided for @addressLine1.
+  ///
+  /// In en, this message translates to:
+  /// **'Address Line 1'**
+  String get addressLine1;
+
+  /// No description provided for @addressLine2.
+  ///
+  /// In en, this message translates to:
+  /// **'Address Line 2'**
+  String get addressLine2;
+
+  /// No description provided for @newAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'New Address'**
+  String get newAddress;
+
+  /// No description provided for @makeDefaultShipping.
+  ///
+  /// In en, this message translates to:
+  /// **'Make Default Shipping Address'**
+  String get makeDefaultShipping;
+
+  /// No description provided for @saveAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Address'**
+  String get saveAddress;
+
+  /// No description provided for @resetYourPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset your password'**
+  String get resetYourPassword;
+
+  /// No description provided for @enterPhoneToReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your number. We will send a code to your phone to reset your password.'**
+  String get enterPhoneToReset;
+
+  /// No description provided for @sendMeLink.
+  ///
+  /// In en, this message translates to:
+  /// **'Send me link'**
+  String get sendMeLink;
+
+  /// No description provided for @addNewPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Password'**
+  String get addNewPassword;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// No description provided for @updatePhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Phone Number'**
+  String get updatePhoneNumber;
+
+  /// No description provided for @rememberMyCardDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Remember My Card Details'**
+  String get rememberMyCardDetails;
+
+  /// No description provided for @addCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Card'**
+  String get addCard;
+
+  /// No description provided for @continueWithEmailOrPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Email or Phone'**
+  String get continueWithEmailOrPhone;
+
+  /// No description provided for @createAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create an account'**
+  String get createAnAccount;
 }
 
 class _AppLocalizationsDelegate

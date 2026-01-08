@@ -6,6 +6,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_defaults.dart';
 
 import '../../../core/components/app_back_button.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class AddNewCardPage extends StatefulWidget {
   const AddNewCardPage({super.key});
@@ -46,10 +47,11 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Add New Card'),
+        title: Text(l10n.addNewCard),
       ),
       backgroundColor: AppColors.cardColor,
       body: SingleChildScrollView(
@@ -68,7 +70,7 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
               onCreditCardWidgetChange: (v) {},
               isChipVisible: false,
             ),
-            CreditCardForm(
+            CreditCardFormWidget(
               cardNumber: cardNumber,
               expireDate: expireDate,
               cvv: cvv,
@@ -87,8 +89,8 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
   }
 }
 
-class CreditCardForm extends StatelessWidget {
-  const CreditCardForm({
+class CreditCardFormWidget extends StatelessWidget {
+  const CreditCardFormWidget({
     super.key,
     required this.cardNumber,
     required this.expireDate,
@@ -109,6 +111,7 @@ class CreditCardForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Container(
       padding: const EdgeInsets.all(AppDefaults.padding),
       margin: const EdgeInsets.all(AppDefaults.padding),
@@ -119,7 +122,7 @@ class CreditCardForm extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Card Name"),
+          Text(l10n.cardName),
           const SizedBox(height: 8),
           TextFormField(
             keyboardType: TextInputType.text,
@@ -128,7 +131,7 @@ class CreditCardForm extends StatelessWidget {
             onChanged: onTextChanged,
           ),
           const SizedBox(height: AppDefaults.padding),
-          const Text("Card Number"),
+          Text(l10n.cardNumber),
           const SizedBox(height: 8),
           TextFormField(
             keyboardType: TextInputType.number,
@@ -143,7 +146,7 @@ class CreditCardForm extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text("Expire Date"),
+                    Text(l10n.expireDate),
                     const SizedBox(height: 8),
                     TextFormField(
                       keyboardType: TextInputType.number,
@@ -159,7 +162,7 @@ class CreditCardForm extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text("CVV"),
+                    Text(l10n.cvv),
                     const SizedBox(height: 8),
                     TextFormField(
                       keyboardType: TextInputType.number,
@@ -176,7 +179,7 @@ class CreditCardForm extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Remember My Card Details',
+                l10n.rememberMyCardDetails,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       color: Colors.black,
                     ),
@@ -196,7 +199,7 @@ class CreditCardForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text('Add Card'),
+              child: Text(l10n.addCard),
             ),
           ),
           const SizedBox(height: AppDefaults.padding),

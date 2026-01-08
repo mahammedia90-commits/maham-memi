@@ -23,6 +23,15 @@ class DrawerPage extends StatelessWidget {
         padding: const EdgeInsets.all(AppDefaults.padding),
         child: Column(
           children: [
+            // Logo
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: AppDefaults.padding),
+              child: Image.asset(
+                "assets/images/XX.png",
+                height: 100,
+              ),
+            ),
+            const SizedBox(height: AppDefaults.padding),
             AppSettingsListTile(
               label: l10n.inviteFriend,
               trailing: SvgPicture.asset(AppIcons.right),

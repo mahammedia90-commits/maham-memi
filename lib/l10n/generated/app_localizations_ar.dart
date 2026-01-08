@@ -150,7 +150,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get officeAddress => 'عنوان العمل';
 
   @override
-  String get profile => 'الملف الشخصي';
+  String get profile => 'حسابي';
 
   @override
   String get myProfile => 'ملفي الشخصي';
@@ -183,13 +183,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get home => 'الرئيسية';
 
   @override
-  String get menu => 'القائمة';
+  String get menu => 'الأقسام';
 
   @override
   String get cart => 'السلة';
 
   @override
-  String get saved => 'المحفوظات';
+  String get saved => 'المفضلة';
 
   @override
   String get chooseCategory => 'اختر فئة';
@@ -553,4 +553,86 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get discountVegetables => 'خصم 20% على الخضروات';
+
+  @override
+  String get city => 'المدينة';
+
+  @override
+  String get state => 'المنطقة';
+
+  @override
+  String get zipCode => 'الرمز البريدي';
+
+  @override
+  String get newPhoneNumber => 'رقم الهاتف الجديد';
+
+  @override
+  String get retypePhoneNumber => 'أعد كتابة رقم الهاتف';
+
+  @override
+  String get cardName => 'اسم البطاقة';
+
+  @override
+  String get cardNumber => 'رقم البطاقة';
+
+  @override
+  String get expireDate => 'تاريخ الانتهاء';
+
+  @override
+  String get expirationDate => 'تاريخ الانتهاء';
+
+  @override
+  String get cvv => 'CVV';
+
+  @override
+  String get address => 'العنوان';
+
+  @override
+  String get streetAddress => 'عنوان الشارع';
+
+  @override
+  String get addressLine1 => 'العنوان 1';
+
+  @override
+  String get addressLine2 => 'العنوان 2';
+
+  @override
+  String get newAddress => 'عنوان جديد';
+
+  @override
+  String get makeDefaultShipping => 'جعله عنوان الشحن الافتراضي';
+
+  @override
+  String get saveAddress => 'حفظ العنوان';
+
+  @override
+  String get resetYourPassword => 'إعادة تعيين كلمة المرور';
+
+  @override
+  String get enterPhoneToReset =>
+      'يرجى إدخال رقمك. سنرسل رمزاً إلى هاتفك لإعادة تعيين كلمة المرور.';
+
+  @override
+  String get sendMeLink => 'أرسل لي الرابط';
+
+  @override
+  String get addNewPassword => 'إضافة كلمة مرور جديدة';
+
+  @override
+  String get done => 'تم';
+
+  @override
+  String get updatePhoneNumber => 'تحديث رقم الهاتف';
+
+  @override
+  String get rememberMyCardDetails => 'تذكر بيانات بطاقتي';
+
+  @override
+  String get addCard => 'إضافة بطاقة';
+
+  @override
+  String get continueWithEmailOrPhone => 'المتابعة بالبريد أو الهاتف';
+
+  @override
+  String get createAnAccount => 'إنشاء حساب جديد';
 }

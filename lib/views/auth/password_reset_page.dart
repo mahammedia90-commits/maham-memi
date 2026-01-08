@@ -3,17 +3,19 @@ import '../../core/routes/app_routes.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class PasswordResetPage extends StatelessWidget {
   const PasswordResetPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.scaffoldWithBoxBackground,
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('New Password'),
+        title: Text(l10n.newPassword),
         backgroundColor: AppColors.scaffoldBackground,
       ),
       body: Center(
@@ -35,21 +37,21 @@ class PasswordResetPage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Add New password',
+                      l10n.addNewPassword,
                       style: Theme.of(context)
                           .textTheme
                           .titleLarge
                           ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: AppDefaults.padding * 3),
-                    const Text("New Password"),
+                    Text(l10n.newPassword),
                     const SizedBox(height: 8),
                     TextFormField(
                       autofocus: true,
                       textInputAction: TextInputAction.next,
                     ),
                     const SizedBox(height: AppDefaults.padding),
-                    const Text("Confirm Password"),
+                    Text(l10n.confirmPassword),
                     const SizedBox(height: 8),
                     TextFormField(
                       textInputAction: TextInputAction.next,
@@ -61,7 +63,7 @@ class PasswordResetPage extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, AppRoutes.login);
                         },
-                        child: const Text('Done'),
+                        child: Text(l10n.done),
                       ),
                     ),
                   ],

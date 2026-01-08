@@ -553,4 +553,86 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get discountVegetables => '20% off vegetables';
+
+  @override
+  String get city => 'City';
+
+  @override
+  String get state => 'State';
+
+  @override
+  String get zipCode => 'Zip Code';
+
+  @override
+  String get newPhoneNumber => 'New Phone Number';
+
+  @override
+  String get retypePhoneNumber => 'Retype Phone Number';
+
+  @override
+  String get cardName => 'Card Name';
+
+  @override
+  String get cardNumber => 'Card Number';
+
+  @override
+  String get expireDate => 'Expire Date';
+
+  @override
+  String get expirationDate => 'Expiration Date';
+
+  @override
+  String get cvv => 'CVV';
+
+  @override
+  String get address => 'Address';
+
+  @override
+  String get streetAddress => 'Street Address';
+
+  @override
+  String get addressLine1 => 'Address Line 1';
+
+  @override
+  String get addressLine2 => 'Address Line 2';
+
+  @override
+  String get newAddress => 'New Address';
+
+  @override
+  String get makeDefaultShipping => 'Make Default Shipping Address';
+
+  @override
+  String get saveAddress => 'Save Address';
+
+  @override
+  String get resetYourPassword => 'Reset your password';
+
+  @override
+  String get enterPhoneToReset =>
+      'Please enter your number. We will send a code to your phone to reset your password.';
+
+  @override
+  String get sendMeLink => 'Send me link';
+
+  @override
+  String get addNewPassword => 'Add New Password';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get updatePhoneNumber => 'Update Phone Number';
+
+  @override
+  String get rememberMyCardDetails => 'Remember My Card Details';
+
+  @override
+  String get addCard => 'Add Card';
+
+  @override
+  String get continueWithEmailOrPhone => 'Continue with Email or Phone';
+
+  @override
+  String get createAnAccount => 'Create an account';
 }

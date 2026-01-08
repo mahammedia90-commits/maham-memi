@@ -4,19 +4,19 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_defaults.dart';
 
 import '../../../core/components/app_back_button.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class NewAddressPage extends StatelessWidget {
   const NewAddressPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.cardColor,
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'New Address',
-        ),
+        title: Text(l10n.newAddress),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -34,7 +34,7 @@ class NewAddressPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /* <----  Full Name -----> */
-              const Text("Full Name"),
+              Text(l10n.fullName),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -43,7 +43,7 @@ class NewAddressPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Phone Number -----> */
-              const Text("Phone Number"),
+              Text(l10n.phoneNumber),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.number,
@@ -52,7 +52,7 @@ class NewAddressPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Address Line 1 -----> */
-              const Text("Address Line 1"),
+              Text(l10n.addressLine1),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -61,7 +61,7 @@ class NewAddressPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- Address Line 2 -----> */
-              const Text("Address Line 2"),
+              Text(l10n.addressLine2),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -70,7 +70,7 @@ class NewAddressPage extends StatelessWidget {
               const SizedBox(height: AppDefaults.padding),
 
               /* <---- City -----> */
-              const Text("City"),
+              Text(l10n.city),
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.text,
@@ -85,7 +85,7 @@ class NewAddressPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text("State"),
+                        Text(l10n.state),
                         const SizedBox(height: 8),
                         TextFormField(
                           keyboardType: TextInputType.text,
@@ -99,7 +99,7 @@ class NewAddressPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text("Zip Code"),
+                        Text(l10n.zipCode),
                         const SizedBox(height: 8),
                         TextFormField(
                           keyboardType: TextInputType.number,
@@ -110,13 +110,13 @@ class NewAddressPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: AppDefaults.padding),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: AppDefaults.padding),
                 child: Row(
                   children: [
-                    AppRadio(isActive: true),
-                    SizedBox(width: AppDefaults.padding),
-                    Text('Make Default Shipping Address'),
+                    const AppRadio(isActive: true),
+                    const SizedBox(width: AppDefaults.padding),
+                    Text(l10n.makeDefaultShipping),
                   ],
                 ),
               ),
@@ -124,7 +124,7 @@ class NewAddressPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  child: const Text('Save Adress'),
+                  child: Text(l10n.saveAddress),
                   onPressed: () {},
                 ),
               ),

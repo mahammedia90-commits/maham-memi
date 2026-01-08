@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 
 import '../../../core/components/app_back_button.dart';
 import '../../../core/constants/constants.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class ChangePhoneNumberPage extends StatelessWidget {
   const ChangePhoneNumberPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text(
-          'Change Phone Number Page',
-        ),
+        title: Text(l10n.changePhoneNumber),
       ),
       backgroundColor: AppColors.cardColor,
       body: Center(
@@ -33,7 +33,7 @@ class ChangePhoneNumberPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 /* <----  New Phone Number -----> */
-                const Text("New Phone Number"),
+                Text(l10n.newPhoneNumber),
                 const SizedBox(height: 8),
                 TextFormField(
                   keyboardType: TextInputType.number,
@@ -42,7 +42,7 @@ class ChangePhoneNumberPage extends StatelessWidget {
                 const SizedBox(height: AppDefaults.padding),
 
                 /* <---- Retype Phone Number -----> */
-                const Text("Retype Phone Number"),
+                Text(l10n.retypePhoneNumber),
                 const SizedBox(height: 8),
                 TextFormField(
                   keyboardType: TextInputType.number,
@@ -55,7 +55,7 @@ class ChangePhoneNumberPage extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    child: const Text('Update Phone Number'),
+                    child: Text(l10n.updatePhoneNumber),
                     onPressed: () {},
                   ),
                 ),

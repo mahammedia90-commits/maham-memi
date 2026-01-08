@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         child: CustomScrollView(
           slivers: [
             SliverAppBar(
+              toolbarHeight: 100,
               leading: Padding(
                 padding: const EdgeInsets.only(left: 8),
                 child: ElevatedButton(
@@ -32,9 +33,9 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               floating: true,
-              title: SvgPicture.asset(
-                "assets/images/app_logo.svg",
-                height: 32,
+              title: Image.asset(
+                "assets/images/XX.png",
+                height: 90,
               ),
               actions: [
                 Padding(

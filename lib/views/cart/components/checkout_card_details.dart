@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/constants/constants.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class CardDetails extends StatelessWidget {
   const CardDetails({
@@ -10,27 +11,26 @@ class CardDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Padding(
       padding: const EdgeInsets.all(AppDefaults.padding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Name Field
-          const Text("Card Name"),
+          Text(l10n.cardName),
           const SizedBox(height: 8),
           TextFormField(
             keyboardType: TextInputType.number,
-            // validator: Validators.requiredWithFieldName('Card'),
             textInputAction: TextInputAction.next,
           ),
           const SizedBox(height: AppDefaults.padding),
 
           // Number Field
-          const Text("Card Number"),
+          Text(l10n.cardNumber),
           const SizedBox(height: 8),
           TextFormField(
             keyboardType: TextInputType.number,
-            // validator: Validators.requiredWithFieldName('Card Number'),
             textInputAction: TextInputAction.next,
           ),
           const SizedBox(height: AppDefaults.padding),
@@ -43,11 +43,10 @@ class CardDetails extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Number Field
-                    const Text("Expiration Date"),
+                    Text(l10n.expirationDate),
                     const SizedBox(height: 8),
                     TextFormField(
                       keyboardType: TextInputType.number,
-                      // validator: Validators.requiredWithFieldName('Card'),
                       textInputAction: TextInputAction.next,
                     ),
                     const SizedBox(height: AppDefaults.padding),
@@ -60,11 +59,10 @@ class CardDetails extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Number Field
-                    const Text("CVV"),
+                    Text(l10n.cvv),
                     const SizedBox(height: 8),
                     TextFormField(
                       keyboardType: TextInputType.number,
-                      // validator: Validators.requiredWithFieldName('Card'),
                       textInputAction: TextInputAction.next,
                     ),
                     const SizedBox(height: AppDefaults.padding),
@@ -77,7 +75,7 @@ class CardDetails extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Remember My Card Details',
+                l10n.rememberMyCardDetails,
                 style: Theme.of(context)
                     .textTheme
                     .bodyLarge

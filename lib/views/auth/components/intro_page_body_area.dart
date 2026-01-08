@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_defaults.dart';
 import '../../../core/routes/app_routes.dart';
+import '../../../l10n/generated/app_localizations.dart';
 
 class IntroPageBodyArea extends StatelessWidget {
   const IntroPageBodyArea({
@@ -11,6 +12,7 @@ class IntroPageBodyArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return SafeArea(
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -26,15 +28,20 @@ class IntroPageBodyArea extends StatelessWidget {
                       child: SizedBox(
                         width: double.infinity,
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
+                            Image.asset(
+                              "assets/images/XX.png",
+                              height: 150,
+                            ),
+                            const SizedBox(height: AppDefaults.padding),
                             Text(
-                              'Welcome to our',
+                              l10n.welcomeTo,
                               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                                   fontWeight: FontWeight.bold, color: Colors.black),
                             ),
                             Text(
-                              'Zajalkom',
+                              l10n.appName,
                               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                                   fontWeight: FontWeight.w700, color: AppColors.primary),
                             ),
@@ -52,7 +59,7 @@ class IntroPageBodyArea extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () =>
                                   Navigator.pushNamed(context, AppRoutes.loginOrSignup),
-                              child: const Text('Continue with Email or Phone'),
+                              child: Text(l10n.continueWithEmailOrPhone),
                             ),
                           ),
                           const SizedBox(height: AppDefaults.padding),
@@ -65,7 +72,7 @@ class IntroPageBodyArea extends StatelessWidget {
                                 foregroundColor: Colors.black,
                                 backgroundColor: Colors.white,
                               ),
-                              child: const Text('Create an account'),
+                              child: Text(l10n.createAnAccount),
                             ),
                           )
                         ],

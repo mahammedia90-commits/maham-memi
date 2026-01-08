@@ -4,17 +4,19 @@ import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
 import '../../core/routes/app_routes.dart';
+import '../../l10n/generated/app_localizations.dart';
 
 class ForgetPasswordPage extends StatelessWidget {
   const ForgetPasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Scaffold(
       backgroundColor: AppColors.scaffoldWithBoxBackground,
       appBar: AppBar(
         leading: const AppBackButton(),
-        title: const Text('Forget Password'),
+        title: Text(l10n.forgetPassword),
         backgroundColor: AppColors.scaffoldBackground,
       ),
       body: Center(
@@ -36,18 +38,16 @@ class ForgetPasswordPage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Reset your password',
+                      l10n.resetYourPassword,
                       style: Theme.of(context)
                           .textTheme
                           .titleLarge
                           ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: AppDefaults.padding),
-                    const Text(
-                      'Please enter your number. We will send a code\nto your phone to reset your password.',
-                    ),
+                    Text(l10n.enterPhoneToReset),
                     const SizedBox(height: AppDefaults.padding * 3),
-                    const Text("Phone Number"),
+                    Text(l10n.phoneNumber),
                     const SizedBox(height: 8),
                     TextFormField(
                       autofocus: true,
@@ -62,7 +62,7 @@ class ForgetPasswordPage extends StatelessWidget {
                         onPressed: () {
                           Navigator.pushNamed(context, AppRoutes.passwordReset);
                         },
-                        child: const Text('Send me link'),
+                        child: Text(l10n.sendMeLink),
                       ),
                     ),
                   ],

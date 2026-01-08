@@ -22,37 +22,41 @@ class AppBottomNavigationBar extends StatelessWidget {
       notchMargin: AppDefaults.margin,
       color: AppColors.scaffoldBackground,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          BottomAppBarItem(
-            name: l10n.home,
-            iconLocation: AppIcons.home,
-            isActive: currentIndex == 0,
-            onTap: () => onNavTap(0),
+          Expanded(
+            child: BottomAppBarItem(
+              name: l10n.home,
+              iconLocation: AppIcons.home,
+              isActive: currentIndex == 0,
+              onTap: () => onNavTap(0),
+            ),
           ),
-          BottomAppBarItem(
-            name: l10n.menu,
-            iconLocation: AppIcons.menu,
-            isActive: currentIndex == 1,
-            onTap: () => onNavTap(1),
+          Expanded(
+            child: BottomAppBarItem(
+              name: l10n.menu,
+              iconLocation: AppIcons.menu,
+              isActive: currentIndex == 1,
+              onTap: () => onNavTap(1),
+            ),
           ),
-          const Padding(
-            padding: EdgeInsets.all(AppDefaults.padding * 2),
-            child: SizedBox(width: AppDefaults.margin),
-          ),
+          const SizedBox(width: 56),
           /* <---- We have to leave this 3rd index (2) for the cart item -----> */
-
-          BottomAppBarItem(
-            name: l10n.saved,
-            iconLocation: AppIcons.save,
-            isActive: currentIndex == 3,
-            onTap: () => onNavTap(3),
+          Expanded(
+            child: BottomAppBarItem(
+              name: l10n.saved,
+              iconLocation: AppIcons.save,
+              isActive: currentIndex == 3,
+              onTap: () => onNavTap(3),
+            ),
           ),
-          BottomAppBarItem(
-            name: l10n.profile,
-            iconLocation: AppIcons.profile,
-            isActive: currentIndex == 4,
-            onTap: () => onNavTap(4),
+          Expanded(
+            child: BottomAppBarItem(
+              name: l10n.profile,
+              iconLocation: AppIcons.profile,
+              isActive: currentIndex == 4,
+              onTap: () => onNavTap(4),
+            ),
           ),
         ],
       ),

@@ -52,7 +52,7 @@
   "homeAddress": "عنوان المنزل",
   "officeAddress": "عنوان العمل",
 
-  "profile": "الملف الشخصي",
+  "profile": "حسابي",
   "myProfile": "ملفي الشخصي",
   "notification": "الإشعارات",
   "setting": "الإعدادات",
@@ -64,9 +64,9 @@
   "deliveryAddress": "عنوان التوصيل",
 
   "home": "الرئيسية",
-  "menu": "القائمة",
+  "menu": "الأقسام",
   "cart": "السلة",
-  "saved": "المحفوظات",
+  "saved": "المفضلة",
 
   "chooseCategory": "اختر فئة",
   "vegetables": "الخضروات",
@@ -206,5 +206,33 @@
 
   "hotDealMessage": "عرض ساخن اشتري واحد واحصل على واحد مجاناً",
   "youGetYourOrder": "لقد استلمت طلبك",
-  "discountVegetables": "خصم 20% على الخضروات"
+  "discountVegetables": "خصم 20% على الخضروات",
+
+  "city": "المدينة",
+  "state": "المنطقة",
+  "zipCode": "الرمز البريدي",
+  "newPhoneNumber": "رقم الهاتف الجديد",
+  "retypePhoneNumber": "أعد كتابة رقم الهاتف",
+  "cardName": "اسم البطاقة",
+  "cardNumber": "رقم البطاقة",
+  "expireDate": "تاريخ الانتهاء",
+  "expirationDate": "تاريخ الانتهاء",
+  "cvv": "CVV",
+  "address": "العنوان",
+  "streetAddress": "عنوان الشارع",
+  "addressLine1": "العنوان 1",
+  "addressLine2": "العنوان 2",
+  "newAddress": "عنوان جديد",
+  "makeDefaultShipping": "جعله عنوان الشحن الافتراضي",
+  "saveAddress": "حفظ العنوان",
+  "resetYourPassword": "إعادة تعيين كلمة المرور",
+  "enterPhoneToReset": "يرجى إدخال رقمك. سنرسل رمزاً إلى هاتفك لإعادة تعيين كلمة المرور.",
+  "sendMeLink": "أرسل لي الرابط",
+  "addNewPassword": "إضافة كلمة مرور جديدة",
+  "done": "تم",
+  "updatePhoneNumber": "تحديث رقم الهاتف",
+  "rememberMyCardDetails": "تذكر بيانات بطاقتي",
+  "addCard": "إضافة بطاقة",
+  "continueWithEmailOrPhone": "المتابعة بالبريد أو الهاتف",
+  "createAnAccount": "إنشاء حساب جديد"
 }
