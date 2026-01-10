@@ -66,8 +66,51 @@ class SettingsPage extends StatelessWidget {
               trailing: SvgPicture.asset(AppIcons.right),
               onTap: () => Navigator.pushNamed(context, AppRoutes.profileEdit),
             ),
+            const SizedBox(height: AppDefaults.padding * 2),
+            AppSettingsListTile(
+              label: l10n.logout,
+              trailing: SvgPicture.asset(AppIcons.profileLogout),
+              onTap: () => Navigator.pushNamedAndRemoveUntil(
+                context,
+                AppRoutes.introLogin,
+                (route) => false,
+              ),
+            ),
+            AppSettingsListTile(
+              label: l10n.deleteAccount,
+              trailing: const Icon(Icons.delete_forever, color: Colors.red),
+              onTap: () => _showDeleteAccountDialog(context, l10n),
+            ),
           ],
         ),
+      ),
+    );
+  }
+
+  void _showDeleteAccountDialog(BuildContext context, AppLocalizations l10n) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.deleteAccount),
+        content: Text(l10n.deleteAccountConfirmation),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(l10n.cancel),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                AppRoutes.introLogin,
+                (route) => false,
+              );
+            },
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: Text(l10n.delete),
+          ),
+        ],
       ),
     );
   }

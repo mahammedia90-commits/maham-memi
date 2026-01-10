@@ -234,5 +234,7 @@
   "rememberMyCardDetails": "Remember My Card Details",
   "addCard": "Add Card",
   "continueWithEmailOrPhone": "Continue with Email or Phone",
-  "createAnAccount": "Create an account"
+  "createAnAccount": "Create an account",
+  "deleteAccount": "Delete Account",
+  "deleteAccountConfirmation": "Are you sure you want to delete your account? This action cannot be undone."
 }

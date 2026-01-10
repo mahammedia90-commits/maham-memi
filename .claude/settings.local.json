@@ -9,7 +9,15 @@
       "Bash(flutter analyze:*)",
       "Bash(flutter build:*)",
       "Bash(dart run:*)",
-      "Bash(git remote set-url:*)"
+      "Bash(git remote set-url:*)",
+      "Bash(ls:*)",
+      "Bash(flutter doctor:*)",
+      "Bash(where:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(tree:*)",
+      "Bash(del /f \"C:\\\\Users\\\\A\\\\Documents\\\\GitHub\\\\maham-memi\\\\nul\")"
     ]
   }
 }

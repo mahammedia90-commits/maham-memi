@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
               ),
               actions: [
                 Padding(
-                  padding: const EdgeInsets.only(right: 8, top: 4, bottom: 4),
+                  padding: const EdgeInsets.only(right: 4, top: 4, bottom: 4),
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, AppRoutes.search);
@@ -49,6 +49,23 @@ class HomePage extends StatelessWidget {
                       shape: const CircleBorder(),
                     ),
                     child: SvgPicture.asset(AppIcons.search),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 8, top: 4, bottom: 4),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamedAndRemoveUntil(
+                        context,
+                        AppRoutes.introLogin,
+                        (route) => false,
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFF2F6F3),
+                      shape: const CircleBorder(),
+                    ),
+                    child: SvgPicture.asset(AppIcons.profileLogout),
                   ),
                 ),
               ],

@@ -234,5 +234,7 @@
   "rememberMyCardDetails": "تذكر بيانات بطاقتي",
   "addCard": "إضافة بطاقة",
   "continueWithEmailOrPhone": "المتابعة بالبريد أو الهاتف",
-  "createAnAccount": "إنشاء حساب جديد"
+  "createAnAccount": "إنشاء حساب جديد",
+  "deleteAccount": "حذف الحساب",
+  "deleteAccountConfirmation": "هل أنت متأكد من حذف حسابك؟ هذا الإجراء لا يمكن التراجع عنه."
 }

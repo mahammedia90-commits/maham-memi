@@ -635,4 +635,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get createAnAccount => 'Create an account';
+
+  @override
+  String get deleteAccount => 'Delete Account';
+
+  @override
+  String get deleteAccountConfirmation =>
+      'Are you sure you want to delete your account? This action cannot be undone.';
 }

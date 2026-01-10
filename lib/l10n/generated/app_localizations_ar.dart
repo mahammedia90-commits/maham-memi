@@ -635,4 +635,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get createAnAccount => 'إنشاء حساب جديد';
+
+  @override
+  String get deleteAccount => 'حذف الحساب';
+
+  @override
+  String get deleteAccountConfirmation =>
+      'هل أنت متأكد من حذف حسابك؟ هذا الإجراء لا يمكن التراجع عنه.';
 }
