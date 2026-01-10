@@ -236,5 +236,8 @@
   "continueWithEmailOrPhone": "المتابعة بالبريد أو الهاتف",
   "createAnAccount": "إنشاء حساب جديد",
   "deleteAccount": "حذف الحساب",
-  "deleteAccountConfirmation": "هل أنت متأكد من حذف حسابك؟ هذا الإجراء لا يمكن التراجع عنه."
+  "deleteAccountConfirmation": "هل أنت متأكد من حذف حسابك؟ هذا الإجراء لا يمكن التراجع عنه.",
+  "comingSoon": "قريباً..",
+  "comingSoonMessage": "نعمل على تجهيز هذا القسم لتقديم أفضل تجربة لك",
+  "goBack": "العودة"
 }

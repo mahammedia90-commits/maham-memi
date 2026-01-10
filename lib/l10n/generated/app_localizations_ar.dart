@@ -642,4 +642,14 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get deleteAccountConfirmation =>
       'هل أنت متأكد من حذف حسابك؟ هذا الإجراء لا يمكن التراجع عنه.';
+
+  @override
+  String get comingSoon => 'قريباً..';
+
+  @override
+  String get comingSoonMessage =>
+      'نعمل على تجهيز هذا القسم لتقديم أفضل تجربة لك';
+
+  @override
+  String get goBack => 'العودة';
 }

@@ -73,4 +73,7 @@ class AppRoutes {
   /* <---- Payment Method -----> */
   static const paymentMethod = '/paymentMethod';
   static const paymentCardAdd = '/paymentCardAdd';
+
+  /* <---- Coming Soon -----> */
+  static const comingSoon = '/comingSoon';
 }

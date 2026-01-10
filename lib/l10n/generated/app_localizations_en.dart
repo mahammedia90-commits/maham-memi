@@ -642,4 +642,14 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get deleteAccountConfirmation =>
       'Are you sure you want to delete your account? This action cannot be undone.';
+
+  @override
+  String get comingSoon => 'Coming Soon..';
+
+  @override
+  String get comingSoonMessage =>
+      'We are working on this section to provide you with the best experience';
+
+  @override
+  String get goBack => 'Go Back';
 }

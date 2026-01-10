@@ -46,6 +46,7 @@ import '../../views/profile/settings/settings_page.dart';
 import '../../views/review/review_page.dart';
 import '../../views/review/submit_review_page.dart';
 import '../../views/save/save_page.dart';
+import '../../views/coming_soon/coming_soon_page.dart';
 import 'app_routes.dart';
 import 'unknown_page.dart';
 
@@ -196,6 +197,9 @@ class RouteGenerator {
 
       case AppRoutes.paymentCardAdd:
         return CupertinoPageRoute(builder: (_) => const AddNewCardPage());
+
+      case AppRoutes.comingSoon:
+        return CupertinoPageRoute(builder: (_) => const ComingSoonPage());
 
       default:
         return errorRoute();

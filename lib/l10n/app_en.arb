@@ -236,5 +236,8 @@
   "continueWithEmailOrPhone": "Continue with Email or Phone",
   "createAnAccount": "Create an account",
   "deleteAccount": "Delete Account",
-  "deleteAccountConfirmation": "Are you sure you want to delete your account? This action cannot be undone."
+  "deleteAccountConfirmation": "Are you sure you want to delete your account? This action cannot be undone.",
+  "comingSoon": "Coming Soon..",
+  "comingSoonMessage": "We are working on this section to provide you with the best experience",
+  "goBack": "Go Back"
 }
