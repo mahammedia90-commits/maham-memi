@@ -6,6 +6,7 @@ import '../../core/components/price_and_quantity.dart';
 import '../../core/components/product_images_slider.dart';
 import '../../core/components/review_row_button.dart';
 import '../../core/constants/constants.dart';
+import '../../core/routes/app_routes.dart';
 import 'components/bundle_meta_data.dart';
 import 'components/bundle_pack_details.dart';
 
@@ -55,7 +56,9 @@ class BundleProductDetailsPage extends StatelessWidget {
                   const ReviewRowButton(totalStars: 5),
                   const Divider(thickness: 0.1),
                   BuyNowRow(
-                    onBuyButtonTap: () {},
+                    onBuyButtonTap: () {
+                      Navigator.pushNamed(context, AppRoutes.cartPage);
+                    },
                     onCartButtonTap: () {},
                   ),
                 ],

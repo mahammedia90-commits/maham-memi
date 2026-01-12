@@ -33,10 +33,6 @@ class DrawerPage extends StatelessWidget {
             ),
             const SizedBox(height: AppDefaults.padding),
             AppSettingsListTile(
-              label: l10n.inviteFriend,
-              trailing: SvgPicture.asset(AppIcons.right),
-            ),
-            AppSettingsListTile(
               label: l10n.aboutUs,
               trailing: SvgPicture.asset(AppIcons.right),
               onTap: () => Navigator.pushNamed(context, AppRoutes.aboutUs),
@@ -56,11 +52,6 @@ class DrawerPage extends StatelessWidget {
               label: l10n.helpCenter,
               trailing: SvgPicture.asset(AppIcons.right),
               onTap: () => Navigator.pushNamed(context, AppRoutes.help),
-            ),
-            AppSettingsListTile(
-              label: l10n.rateApp,
-              trailing: SvgPicture.asset(AppIcons.right),
-              // onTap: () => Navigator.pushNamed(context, AppRoutes.help),
             ),
             AppSettingsListTile(
               label: l10n.privacyPolicy,

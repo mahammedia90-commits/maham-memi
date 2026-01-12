@@ -6,12 +6,18 @@ import '../../core/components/price_and_quantity.dart';
 import '../../core/components/product_images_slider.dart';
 import '../../core/components/review_row_button.dart';
 import '../../core/constants/app_defaults.dart';
+import '../../core/models/dummy_product_model.dart';
+import '../../core/routes/app_routes.dart';
 
 class ProductDetailsPage extends StatelessWidget {
-  const ProductDetailsPage({super.key});
+  const ProductDetailsPage({super.key, this.product});
+
+  final dynamic product;
 
   @override
   Widget build(BuildContext context) {
+    final ProductModel? data = product as ProductModel?;
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
@@ -22,7 +28,9 @@ class ProductDetailsPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding),
           child: BuyNowRow(
-            onBuyButtonTap: () {},
+            onBuyButtonTap: () {
+              Navigator.pushNamed(context, AppRoutes.cartPage);
+            },
             onCartButtonTap: () {},
           ),
         ),
@@ -30,8 +38,8 @@ class ProductDetailsPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const ProductImagesSlider(
-              images: [
+            ProductImagesSlider(
+              images: data?.images ?? [
                 'https://i.imgur.com/3o6ons9.png',
                 'https://i.imgur.com/3o6ons9.png',
                 'https://i.imgur.com/3o6ons9.png',
@@ -45,23 +53,23 @@ class ProductDetailsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Cauliflower Bangladeshi',
+                      data?.name ?? 'Product Name',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                             fontWeight: FontWeight.bold,
                           ),
                     ),
                     const SizedBox(height: 8),
-                    const Text('Weight: 5Kg'),
+                    Text('Weight: ${data?.weight ?? ''}'),
                   ],
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppDefaults.padding),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding),
               child: PriceAndQuantityRow(
-                currentPrice: 20,
-                orginalPrice: 30,
-                quantity: 2,
+                currentPrice: data?.price ?? 20,
+                orginalPrice: data?.mainPrice ?? 30,
+                quantity: 1,
               ),
             ),
             const SizedBox(height: 8),

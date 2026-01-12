@@ -8,7 +8,7 @@ import 'components/coupon_code_field.dart';
 import 'components/items_totals_price.dart';
 import 'components/single_cart_item_tile.dart';
 
-class CartPage extends StatelessWidget {
+class CartPage extends StatefulWidget {
   const CartPage({
     super.key,
     this.isHomePage = false,
@@ -17,10 +17,23 @@ class CartPage extends StatelessWidget {
   final bool isHomePage;
 
   @override
+  State<CartPage> createState() => _CartPageState();
+}
+
+class _CartPageState extends State<CartPage> {
+  List<int> cartItems = [1, 2, 3];
+
+  void _removeItem(int index) {
+    setState(() {
+      cartItems.removeAt(index);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     return Scaffold(
-      appBar: isHomePage
+      appBar: widget.isHomePage
           ? null
           : AppBar(
               leading: const AppBackButton(),
@@ -30,9 +43,12 @@ class CartPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const SingleCartItemTile(),
-              const SingleCartItemTile(),
-              const SingleCartItemTile(),
+              ...List.generate(
+                cartItems.length,
+                (index) => SingleCartItemTile(
+                  onRemove: () => _removeItem(index),
+                ),
+              ),
               const CouponCodeField(),
               const ItemTotalsAndPrice(),
               SizedBox(

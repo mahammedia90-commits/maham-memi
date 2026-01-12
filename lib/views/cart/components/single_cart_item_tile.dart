@@ -4,10 +4,34 @@ import 'package:flutter_svg/svg.dart';
 import '../../../core/components/network_image.dart';
 import '../../../core/constants/constants.dart';
 
-class SingleCartItemTile extends StatelessWidget {
+class SingleCartItemTile extends StatefulWidget {
   const SingleCartItemTile({
     super.key,
+    this.onRemove,
   });
+
+  final VoidCallback? onRemove;
+
+  @override
+  State<SingleCartItemTile> createState() => _SingleCartItemTileState();
+}
+
+class _SingleCartItemTileState extends State<SingleCartItemTile> {
+  int quantity = 1;
+
+  void _incrementQuantity() {
+    setState(() {
+      quantity++;
+    });
+  }
+
+  void _decrementQuantity() {
+    if (quantity > 1) {
+      setState(() {
+        quantity--;
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -59,14 +83,14 @@ class SingleCartItemTile extends StatelessWidget {
                   Row(
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: _incrementQuantity,
                         icon: SvgPicture.asset(AppIcons.addQuantity),
                         constraints: const BoxConstraints(),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          '1',
+                          '$quantity',
                           style:
                               Theme.of(context).textTheme.bodyLarge?.copyWith(
                                     fontWeight: FontWeight.bold,
@@ -75,7 +99,7 @@ class SingleCartItemTile extends StatelessWidget {
                         ),
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: _decrementQuantity,
                         icon: SvgPicture.asset(AppIcons.removeQuantity),
                         constraints: const BoxConstraints(),
                       ),
@@ -90,11 +114,11 @@ class SingleCartItemTile extends StatelessWidget {
                 children: [
                   IconButton(
                     constraints: const BoxConstraints(),
-                    onPressed: () {},
+                    onPressed: widget.onRemove,
                     icon: SvgPicture.asset(AppIcons.delete),
                   ),
                   const SizedBox(height: 16),
-                  const Text('\$20'),
+                  Text('\$${20 * quantity}'),
                 ],
               )
             ],

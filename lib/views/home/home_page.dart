@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../core/constants/app_icons.dart';
 
@@ -13,7 +14,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) {
+        if (!didPop) {
+          SystemNavigator.pop();
+        }
+      },
+      child: Scaffold(
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
@@ -84,6 +92,7 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }
