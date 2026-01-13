@@ -15,6 +15,7 @@ import '../../views/drawer/drawer_page.dart';
 import '../../views/drawer/faq_page.dart';
 import '../../views/drawer/help_page.dart';
 import '../../views/drawer/terms_and_conditions_page.dart';
+import '../../views/drawer/privacy_policy_page.dart';
 import '../../views/entrypoint/entrypoint_ui.dart';
 import '../../views/home/bundle_create_page.dart';
 import '../../views/home/bundle_details_page.dart';
@@ -193,6 +194,9 @@ class RouteGenerator {
 
       case AppRoutes.contactUs:
         return CupertinoPageRoute(builder: (_) => const ContactUsPage());
+
+      case AppRoutes.privacyPolicy:
+        return CupertinoPageRoute(builder: (_) => const PrivacyPolicyPage());
 
       case AppRoutes.paymentMethod:
         return CupertinoPageRoute(builder: (_) => const PaymentMethodPage());

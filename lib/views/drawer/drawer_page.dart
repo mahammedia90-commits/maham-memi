@@ -56,7 +56,7 @@ class DrawerPage extends StatelessWidget {
             AppSettingsListTile(
               label: l10n.privacyPolicy,
               trailing: SvgPicture.asset(AppIcons.right),
-              // onTap: () => Navigator.pushNamed(context, AppRoutes.),
+              onTap: () => Navigator.pushNamed(context, AppRoutes.privacyPolicy),
             ),
             AppSettingsListTile(
               label: l10n.contactUs,
